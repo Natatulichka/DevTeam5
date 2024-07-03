@@ -1,4 +1,5 @@
 /* Reset styles */
+
 h1,
 h2,
 h3,
@@ -7,10 +8,6 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
 }
 
 ul {
@@ -32,4 +29,39 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+body {
+  font-family: 'Inter Tight', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  background-color: #1c1d20;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  align-content: center;
+  color: #fafafa;
+}
+.section {
+  padding: 32px 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .section {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    max-width: 768px;
+    padding: 32px 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    max-width: 1440px;
+    padding: 48px 32px;
+  }
 }
