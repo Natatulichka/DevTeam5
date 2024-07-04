@@ -1,0 +1,186 @@
+.section.hero-section {
+  padding: 0;
+  min-width: 320px;
+  max-width: 1440px;
+  background: url(../img/hero/hero-mobile@1x.png) no-repeat;
+  background-color: #1c1d20;
+  height: 812px;
+  margin: 0 auto;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .section.hero-section {
+    background: url(../img/hero/hero-mobile@2x.png) no-repeat;
+    background-color: #1c1d20;
+    background-size: 310px 812px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section.hero-section {
+    background: url(../img/hero/hero-tablet@1x.png) no-repeat;
+    background-color: #1c1d20;
+    height: 1024px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section.hero-section {
+    background: url(../img/hero/hero-tablet@2x.png) no-repeat;
+    background-color: #1c1d20;
+    background-size: 581px 1024px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .section.hero-section {
+    background: url(../img/hero/hero-desktop@1x.png) no-repeat;
+    background-color: #1c1d20;
+    height: 900px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .section.hero-section {
+    background: url(../img/hero/hero-desktop@2x.png) no-repeat;
+    background-color: #1c1d20;
+    background-size: 728px 900px;
+  }
+}
+.hero-container {
+  background-size: 310px 812px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero-container {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}
+.hero-title-box {
+  padding-top: 281px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title-box {
+    padding-top: 300px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-title-box {
+    padding-left: 146px;
+  }
+}
+.hero-title {
+  color: rgba(250, 250, 250, 1);
+  font-family: 'Inter Tight';
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  margin: 0;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 90px;
+  }
+}
+
+.hero-title-fix {
+  display: block;
+}
+@media only screen and (min-width: 1440px) {
+  .fix-2,
+  .fix-4 {
+    display: none;
+  }
+}
+.hero-contacts-box {
+  height: 37px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 768px) {
+  .hero-contacts-box {
+    height: 55px;
+  }
+}
+
+.hero-contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.hero-contact-item {
+  width: 37px;
+  margin-right: 4px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-contact-item {
+    width: 55px;
+    margin-right: 8px;
+  }
+}
+
+.hero-mail {
+  width: 178px;
+  margin-right: 0;
+}
+@media only screen and (min-width: 768px) {
+  .hero-mail {
+    width: 223px;
+  }
+}
+
+.hero-contact-link {
+  font-family: 'Inter Tight';
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 1);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-contact-link:hover,
+.hero-contact-link:focus {
+  border-color: rgba(250, 250, 250, 1);
+}
+@media only screen and (min-width: 768px) {
+  .hero-contact-link {
+    font-size: 16px;
+  }
+}
