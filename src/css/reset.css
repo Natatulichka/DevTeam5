@@ -30,14 +30,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 body {
   font-family: 'Inter Tight', sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
   background-color: #1c1d20;
-  font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   align-content: center;
   color: #fafafa;
