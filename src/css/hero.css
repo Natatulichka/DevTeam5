@@ -5,7 +5,6 @@
   background: url(../img/hero/hero-mobile@1x.png) no-repeat;
   background-color: #1c1d20;
   height: 812px;
-  margin: 0 auto;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
@@ -51,7 +50,9 @@
     background-size: 728px 900px;
   }
 }
-.hero-container {
+.container.hero-container {
+  min-width: 320px;
+  max-width: 1440px;
   background-size: 310px 812px;
   height: 100%;
   margin: 0 auto;
@@ -62,17 +63,12 @@
   padding-right: 16px;
 }
 @media only screen and (min-width: 768px) {
-  .hero-container {
+  .container.hero-container {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
-@media only screen and (max-width: 375px) {
-  .hero-container {
-    padding-right: 4px;
-    padding-left: 4px;
-  }
-}
+
 .hero-title-box {
   padding-top: 281px;
 }
@@ -89,7 +85,6 @@
 }
 .hero-title {
   color: rgba(250, 250, 250, 1);
-  font-family: 'Inter Tight';
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 500;
@@ -161,7 +156,6 @@
 }
 
 .hero-contact-link {
-  font-family: 'Inter Tight';
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -174,6 +168,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-contact-link:hover {
   border-color: rgba(250, 250, 250, 1);
