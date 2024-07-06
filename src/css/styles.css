@@ -4,8 +4,10 @@
   | default @import url()
   |============================
 */
+@import url('./benefits.css');
 @import url('./reset.css');
 @import url('./footer.css');
 @import url('../../node_modules/swiper/swiper-bundle.min.css');
 @import url('../../node_modules/modern-normalize/modern-normalize.css');
-@import url('../../node_modules/swiper/swiper-bundle.min.css');
+@import url('./about.css');
+@import url('./hero.css');
