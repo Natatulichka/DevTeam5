@@ -2,7 +2,8 @@
 
 .footer {
   padding: 32px 0;
-  background: #1c1d20 url('') right center no-repeat;
+  background: #1c1d20 url('/img/footer/footer-glass_mobil_1x.png') right center
+    no-repeat;
 }
 .container {
   max-width: 375px;
@@ -85,29 +86,49 @@
   background-color: #e0373f;
   letter-spacing: 0.1em;
 }
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 37px;
+}
 .contacts {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 4px;
+  height: 100%;
 }
 .contacts-item {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 12px;
   line-height: 1;
-  transition: 0.25s;
+  height: 100%;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-mail {
+  width: 178px;
+}
+.contacts-phone {
+  width: 118px;
 }
 .contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-weight: 500;
   font-size: 0.875rem;
   font-style: normal;
   letter-spacing: -0.02em;
   color: #fafafa;
-  transition: 0.25s;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-item:hover {
-  border: 1px solid #fafafa;
+  border-color: #fafafa;
 }
 .contacts-item:hover .contacts-link {
   color: #e0373f;
@@ -196,7 +217,9 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    padding: 80px 0 169px;
+    background: #1c1d20 url('/img/footer/footer-glass_tablet_1x.png') right
+      center no-repeat;
   }
   .container {
     max-width: 768px;
@@ -205,7 +228,7 @@
   .footer-top {
     max-width: 542px;
     gap: 10px;
-    margin-bottom: 64px;
+    margin-bottom: 18px;
   }
   .footer-image {
     border-radius: 24px;
@@ -233,15 +256,20 @@
     width: 150px;
     height: 150px;
   }
+  .footer-bottom {
+    height: 55px;
+  }
   .contacts {
     gap: 8px;
   }
-  .contacts-item {
-    padding: 18px 32px;
-    line-height: 1;
+  .contacts-mail {
+    width: 239px;
+  }
+  .contacts-phone {
+    width: 171px;
   }
   .contacts-link {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .modal {
     max-width: 493px;
@@ -261,7 +289,8 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    background: #1c1d20 url('/img/footer/footer-glass_desktop_1x.png') right
+      center no-repeat;
   }
   .container {
     max-width: 1440px;
@@ -279,18 +308,21 @@
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    background: #1c1d20 url('/img/footer/footer-glass_mobil_1x.png') right
+      center no-repeat;
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    background: #1c1d20 url('/img/footer/footer-glass_tablet_2x.png') right
+      center no-repeat;
   }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    background: #1c1d20 url('/img/footer/footer-glass_desktop_2x.png') right
+      center no-repeat;
   }
 }
