@@ -3,7 +3,11 @@
     <div class="footer-top">
       <img
         class="footer-image"
-        src="../img/footer_img_1x.jpg"
+        srcset="
+          ../img/footer/footer_img_1x.jpg 1x,
+          ../img/footer/footer_img_2x.jpg 2x
+        "
+        src="../img/footer/footer_img_1x.jpg"
         alt="Photo Djefferson"
       />
       <h2 class="footer-title">Let’s <span class="title-accent">work</span></h2>
@@ -53,13 +57,7 @@
   <div class="modal">
     <div class="modal-box">
       <button class="close-btn" type="button">
-        <svg
-          width="22"
-          height="22"
-          viewBox="0 0 22 22"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             class="icon-close"
             d="M16.5 5.5L5.5 16.5"
