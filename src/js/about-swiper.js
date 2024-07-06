@@ -10,6 +10,7 @@ loop: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
+ 
   },
 
 
@@ -41,7 +42,7 @@ loop: true,
              },
     
         1440: {
-          slidesPerView: 6,
+          slidesPerView: 5.9,
          }
     }
 
