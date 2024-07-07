@@ -11,10 +11,10 @@ contactForm.addEventListener('submit', async function (e) {
     }
     // Save to Local Storage
     localStorage.setItem('email', email);
-    localStorage.setItem('comments', comments);
+    localStorage.setItem('comment', comments);
     const dataLoad = {
         email: email,
-        comments: comments
+        comment: comments
     };
     // Request on API server
     try {
