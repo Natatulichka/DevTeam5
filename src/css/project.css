@@ -1,0 +1,137 @@
+.project-container {
+  height: 925px;
+}
+.project-container > h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+.project-swiper {
+  display: flex;
+  border-radius: 24px;
+  height: 812px;
+  margin: 32px 0;
+}
+.project-swiper-slide {
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.project-dscr-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  color: #1c1d20;
+  padding: 32px;
+}
+.project-achive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-dscr-list > h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17em;
+  letter-spacing: -0.03em;
+  margin: 96px 0 32px;
+  text-align: left;
+}
+.achive {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 13px 18px;
+  height: 45px;
+}
+.project-dscr-list > a {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  background-color: #ed3b44;
+  color: #fafafa;
+  border-radius: 60px;
+  padding: 13px 32px;
+  width: 141px;
+  height: 45px;
+}
+.see-project:hover {
+  background-color: #e0373f;
+}
+
+.project-picture {
+  padding: 100px 16px;
+  width: 100%;
+  height: 395px;
+}
+.project-list-item-img {
+  min-width: 100%;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .project-container {
+    height: 1379px;
+  }
+  .project-swiper {
+    height: 1191px;
+  }
+  .project-dscr-list > h2 {
+    font-size: 44px;
+    line-height: 1em;
+    margin: 164px 0 32px;
+  }
+  .project-achive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .project-dscr-list > a {
+    padding: 18px 50px;
+    width: 177px;
+    height: 55px;
+  }
+  .project-dscr-list {
+    padding: 64px;
+  }
+
+  .project-picture {
+    height: 100%;
+    padding: 120px 45px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .project-container {
+    height: 813px;
+    padding: 0 32px;
+  }
+  .project-swiper {
+    height: 625px;
+    margin: 32px 0;
+  }
+  .project-swiper-slide {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .project-dscr-list {
+    width: calc(100% / 2);
+  }
+  .project-dscr-list > h2 {
+    margin-top: 223px;
+    margin-bottom: 32px;
+  }
+  .project-picture {
+    padding: 120px 37px;
+  }
+}

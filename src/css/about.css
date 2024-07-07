@@ -86,12 +86,12 @@
 .about-edu-text:not(:last-child) {
   margin-bottom: 10px;
 }
-
+/* 
 .swiper-wrapper {
   display: flex;
-}
+} */
 
-.swiper-slide {
+/* .swiper-slide {
   display: flex;
   width: 130px;
   height: 130px;
@@ -103,8 +103,8 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #fafafa;
-}
+  color: #fafafa; */
+/* } */
 
 .swiper-slide.checked {
   background-color: #ed3b44;
@@ -132,11 +132,11 @@
     margin-bottom: 64px;
   }
 
-  .swiper-slide {
+  /* .swiper-slide {
     width: 200px;
     height: 200px;
     font-size: 20px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
