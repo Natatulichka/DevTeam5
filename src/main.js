@@ -3,3 +3,4 @@ import './js/api-docs';
 import './js/about-swiper';
 import './js/footer';
 import './js/change-theme';
+import './js/faq';
