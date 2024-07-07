@@ -12,6 +12,14 @@
   overflow: hidden;
 }
 
+.about .container {
+  min-width: 0;
+}
+
+.section.about {
+  padding-top: 64px;
+}
+
 .slogan-avatar {
   display: flex;
   flex-direction: column;
@@ -87,30 +95,62 @@
   margin-bottom: 10px;
 }
 
-.swiper-wrapper {
-  display: flex;
+.about-swiper-container {
+  position: relative;
 }
 
-.swiper-slide {
+.about-tecs.swiper {
+  max-width: 260px;
+  margin-left: 0;
+  margin-right: auto;
+  position: unset;
+}
+
+.about-tecs-title {
   display: flex;
   width: 130px;
   height: 130px;
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  text-align: center;
   justify-content: center;
   align-items: center;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
+  transition: 1000ms;
 }
 
-.swiper-slide.checked {
+.about-tecs .swiper-slide-active > .about-tecs-title {
   background-color: #ed3b44;
 }
 
+.about-tecs .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  right: 0px;
+}
+
+.about-tecs .swiper-button-next::after {
+  content: '';
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../img/about/arrow-narrow-right.svg');
+}
 @media screen and (min-width: 768px) {
+  .about .container {
+    max-width: 704px;
+    padding: 0;
+  }
+
   .about-slogan {
     font-size: 38px;
     line-height: 1.05263;
@@ -132,14 +172,38 @@
     margin-bottom: 64px;
   }
 
-  .swiper-slide {
+  .about-tecs-title {
     width: 200px;
     height: 200px;
     font-size: 20px;
   }
+
+  .about-tecs.swiper {
+    max-width: 600px;
+  }
+
+  .about-tecs .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    right: 0px;
+  }
+
+  .about-tecs .swiper-button-next::after {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .about .container {
+    max-width: 1376px;
+    padding: 0;
+  }
+
+  .section.about {
+    padding-top: 96px;
+  }
+
   .slogan-avatar {
     flex-direction: row;
     column-gap: 16px;
@@ -155,5 +219,13 @@
   .about-descr-info {
     width: calc(100% / 2);
     margin-left: auto;
+  }
+
+  .about-tecs.swiper {
+    max-width: 1200px;
+  }
+
+  .about-tecs .swiper-button-next {
+    right: 32px;
   }
 }
