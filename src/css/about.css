@@ -194,7 +194,9 @@
     row-gap: 8px;
   }
 
-  .about-descr-list {
+  .about .accordion-container {
+    display: flex;
+    flex-direction: column;
     row-gap: 32px;
     margin-bottom: 64px;
   }
@@ -261,5 +263,9 @@
   .about .ac-trigger::after {
     min-width: 40px;
     height: 40px;
+  }
+
+  .about .accordion-container {
+    margin-bottom: 80px;
   }
 }
