@@ -3,7 +3,6 @@
   min-width: 320px;
   max-width: 1440px;
   background: url(../img/hero/hero-mobile@1x.png) no-repeat;
-  background-color: #1c1d20;
   height: 812px;
 }
 
@@ -12,7 +11,6 @@
   only screen and (min-resolution: 2dppx) {
   .section.hero-section {
     background: url(../img/hero/hero-mobile@2x.png) no-repeat;
-    background-color: #1c1d20;
     background-size: 310px 812px;
   }
 }
@@ -20,7 +18,6 @@
 @media only screen and (min-width: 768px) {
   .section.hero-section {
     background: url(../img/hero/hero-tablet@1x.png) no-repeat;
-    background-color: #1c1d20;
     height: 1024px;
   }
 }
@@ -30,7 +27,6 @@
   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section.hero-section {
     background: url(../img/hero/hero-tablet@2x.png) no-repeat;
-    background-color: #1c1d20;
     background-size: 581px 1024px;
   }
 }
@@ -38,7 +34,6 @@
 @media only screen and (min-width: 1440px) {
   .section.hero-section {
     background: url(../img/hero/hero-desktop@1x.png) no-repeat;
-    background-color: #1c1d20;
     height: 900px;
   }
 }
@@ -48,7 +43,6 @@
   only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .section.hero-section {
     background: url(../img/hero/hero-desktop@2x.png) no-repeat;
-    background-color: #1c1d20;
     background-size: 728px 900px;
   }
 }
@@ -61,6 +55,7 @@
   only screen and (min-resolution: 2dppx) {
   .section.hero-section.theme-blue {
     background: url(../img/hero/blue-theme/mobile_hero_blue@2x.png) no-repeat;
+    background-size: 310px 812px;
   }
 }
 
@@ -75,6 +70,7 @@
   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section.hero-section.theme-blue {
     background: url(../img/hero/blue-theme/tablet_hero_blue@2x.png) no-repeat;
+    background-size: 581px 1024px;
   }
 }
 
@@ -89,6 +85,7 @@
   only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .section.hero-section.theme-blue {
     background: url(../img/hero/blue-theme/desktop_hero_blue@2x.png) no-repeat;
+    background-size: 728px 900px;
   }
 }
 /*  */
