@@ -13,7 +13,7 @@
 }
 
 .about .container {
-  max-width: 343px;
+  min-width: 0;
 }
 
 .section.about {
@@ -95,8 +95,15 @@
   margin-bottom: 10px;
 }
 
-.about-tecs .swiper {
+.about-swiper-container {
   position: relative;
+}
+
+.about-tecs.swiper {
+  max-width: 260px;
+  margin-left: 0;
+  margin-right: auto;
+  position: unset;
 }
 
 .about-tecs-title {
@@ -111,24 +118,37 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
+  transition: 1000ms;
 }
 
-.about-tecs-title.checked {
+.about-tecs .swiper-slide-active > .about-tecs-title {
   background-color: #ed3b44;
+}
+
+.about-tecs .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  right: 0px;
 }
 
 .about-tecs .swiper-button-next::after {
   content: '';
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 0;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-image: url('../img/about/arrow-narrow-right.svg');
 }
-
 @media screen and (min-width: 768px) {
   .about .container {
     max-width: 704px;
+    padding: 0;
   }
 
   .about-slogan {
@@ -156,6 +176,21 @@
     width: 200px;
     height: 200px;
     font-size: 20px;
+  }
+
+  .about-tecs.swiper {
+    max-width: 600px;
+  }
+
+  .about-tecs .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    right: 0px;
+  }
+
+  .about-tecs .swiper-button-next::after {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -186,7 +221,11 @@
     margin-left: auto;
   }
 
-  .about-tecs {
-    padding: 0 32px;
+  .about-tecs.swiper {
+    max-width: 1200px;
+  }
+
+  .about-tecs .swiper-button-next {
+    right: 32px;
   }
 }
