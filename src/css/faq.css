@@ -31,7 +31,7 @@
 .question-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Виправлено align-items на center */
     margin-bottom: 16px;
 }
 .question-title {
@@ -46,32 +46,26 @@
     width: 289px;
 }
 
-.arrow-button {
+.faq-arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 100px;
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     background-color: transparent;
-    color: #fafafa;
-    margin-left: auto;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/faq/arrow-down.svg');
     cursor: pointer;
+    transition: background-image 0.3s ease;
 }
-.arrow-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid #fafafa;
-    border-bottom: 2px solid #fafafa;
-    transform: translate(-50%, -50%) rotate(45deg);
-    transition: transform 0.3s ease;
+
+.faq-arrow-button.open {
+    background-image: url('../img/faq/arrow-up.svg');
 }
-.arrow-button.open::before {
-    transform: translate(-50%, -50%) rotate(-135deg);
-}
+
 .faq-accordion-panel {
     width: 100%;
     display: none;
@@ -89,33 +83,29 @@
 
 /* Стилі для планшетів (768px і вище) */
 @media only screen and (min-width: 768px) {
- 
     .faq-accordion {
         flex-direction: column;
     }
-
     .question-wrapper {
         margin-bottom: 26px;
     }
-
-    .arrow-button {
+    .faq-arrow-button {
         width: 40px;
         height: 40px;
     }
-
     .question-title {
         width: 574px;
     }
-    
-
     .question-title:last-of-type {
         width: 485px;
     }
 
+    .faq-accordion-item:first-of-type .question-title {
+        width: 590px;
+    }
     .faq-accordion-panel {
         width: 656px;
     }
-
     .faq-accordion-item {
         padding-top: 32px;
         padding-bottom: 32px;
@@ -124,49 +114,40 @@
 
 /* Стилі для десктопів (1440px і вище) */
 @media screen and (min-width: 1440px) {
-  
     .faq-accordion {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
     .faq-accordion-item {
         width: 100%;
         border-right: 1px solid rgba(250, 250, 250, 0.2);
     }
-
     .faq-accordion-item:last-child {
         border-right: none;
     }
-
     .faq-accordion-item:nth-child(1) {
         order: 1;
         padding-right: 32px;
     }
-
     .faq-accordion-item:nth-child(4) {
         order: 1;
         border-top: 1px solid rgba(250, 250, 250, 0.2);
         border-right: none;
         padding-left: 32px;
     }
-
     .faq-accordion-item:nth-child(2) {
         order: 2;
         padding-right: 32px;
     }
-
     .faq-accordion-item:nth-child(5) {
         order: 2;
         border-right: none;
         padding-left: 32px;
     }
-
     .faq-accordion-item:nth-child(3) {
         order: 3;
         padding-right: 32px;
     }
-
     .faq-accordion-item:nth-child(6) {
         order: 3;
         padding-left: 32px;
