@@ -42,7 +42,7 @@
 }
 
 .slogan-red {
-  color: #ed3b44;
+  color: var(--primary-color);
 }
 
 .slogan-grey {
