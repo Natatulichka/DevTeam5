@@ -1,6 +1,5 @@
 import { loadFromLS, saveToLS } from './local-storage-functions';
 import refs from './refs';
-
 const THEME_KEY = 'Theme';
 
 const savedTheme = loadFromLS(THEME_KEY) || 'red';
@@ -15,6 +14,8 @@ refs.selectThemeElem.addEventListener('change', function () {
 });
 
 function changeTheme(theme) {
-  refs.heroSectionElem.classList.remove('theme-blue');
+  refs.heroSectionElem.classList.remove('theme-blue', 'theme-red');
   refs.heroSectionElem.classList.add(`theme-${theme}`);
+  refs.bodyElem.classList.remove('theme-blue', 'theme-red');
+  refs.bodyElem.classList.add(`theme-${theme}`);
 }
