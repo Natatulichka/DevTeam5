@@ -30,11 +30,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+:root {
+  --primary-color: #ed3b44;
+  --bg-color: #1c1d20;
+  --transition-duration: 0.25s;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-blue {
+  --primary-color: #0041e8;
+}
 
 body {
   font-family: 'Inter Tight', sans-serif;
   font-style: normal;
-  background-color: #1c1d20;
+  background-color: var(--bg-color);
   line-height: 1.5;
   letter-spacing: -0.02em;
   align-content: center;
