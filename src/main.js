@@ -7,4 +7,4 @@ import './js/footer';
 import './js/change-theme';
 import './js/faq';
 import './js/reviews';
-
+import './js/reviews-swiper';
