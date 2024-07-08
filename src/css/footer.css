@@ -31,7 +31,7 @@
   color: #fafafa;
 }
 .title-accent {
-  color: #ed3b44;
+  color: var(--primary-color);
 }
 .footer-form {
   display: flex;
@@ -63,7 +63,7 @@
 }
 .footer-form-input:focus {
   outline: none;
-  border-bottom: 1px solid #e0373f;
+  border-bottom: 1px solid var(--primary-hover-color);
 }
 .footer-form-input:focus::placeholder {
   font-size: 12px;
@@ -72,7 +72,7 @@
 .footer-form-btn {
   width: 100px;
   height: 100px;
-  background-color: #ed3b44;
+  background-color: var(--primary-color);
   border-radius: 50%;
   border: none;
   font-weight: 500;
@@ -83,7 +83,7 @@
 }
 .footer-form-btn:hover {
   opacity: 0.6;
-  background-color: #e0373f;
+  background-color: var(--primary-hover-color);
   letter-spacing: 0.1em;
 }
 .footer-bottom {
@@ -131,7 +131,7 @@
   border-color: #fafafa;
 }
 .contacts-item:hover .contacts-link {
-  color: #e0373f;
+  color: var(--primary-hover-color);
 }
 
 /* Modal-Window */
@@ -198,7 +198,7 @@
 }
 .close-btn:hover .icon-close,
 .close-btn:focus .icon-close {
-  stroke: #ed3b44;
+  stroke: var(--primary-color);
 }
 .modal-title {
   text-align: center;
