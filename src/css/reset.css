@@ -30,23 +30,37 @@ img {
   max-width: 100%;
   height: auto;
 }
+:root {
+  --primary-color: #ed3b44;
+  --primary-hover-color: #e0373f;
+  --bg-color: #1c1d20;
+  --transition-duration: 0.25s;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.theme-blue {
+  --primary-color: #0041e8;
+  --primary-hover-color: #265de9;
+}
+.theme-red {
+  --primary-color: #ed3b44;
+  --primary-hover-color: #e0373f;
+}
 body {
   font-family: 'Inter Tight', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
-  background-color: #1c1d20;
-  font-size: 16px;
-  line-height: 150%;
+  background-color: var(--bg-color);
+  line-height: 1.5;
   letter-spacing: -0.02em;
   align-content: center;
   color: #fafafa;
 }
 .section {
-  padding: 32px 16px;
+  padding: 32px 0;
   margin: 0 auto;
 }
-
+.container {
+  padding: 0 16px;
+}
 @media screen and (min-width: 375px) {
   .section {
     max-width: 375px;
@@ -55,13 +69,19 @@ body {
 @media screen and (min-width: 768px) {
   .section {
     max-width: 768px;
-    padding: 32px 32px;
+    padding: 32px 0;
+  }
+  .container {
+    padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .section {
     max-width: 1440px;
-    padding: 48px 32px;
+    padding: 48px 0;
+  }
+  .container {
+    padding: 0 32px;
   }
 }
