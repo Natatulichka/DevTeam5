@@ -11,4 +11,6 @@ export default {
   closeModalBtnEl: document.querySelector('.close-btn'),
   modalTitleEl: document.querySelector('.modal-title'),
   modalMessageEl: document.querySelector('.modal-message'),
+  //Reviews
+  reviewsList: document.querySelector('#reviews-list'),
 };
