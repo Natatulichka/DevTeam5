@@ -6,3 +6,5 @@ import './js/about-accordion';
 import './js/footer';
 import './js/change-theme';
 import './js/faq';
+import './js/reviews';
+
