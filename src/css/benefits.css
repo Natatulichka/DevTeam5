@@ -39,7 +39,7 @@
     height: 48px;
     margin-top: 24px;
     margin-left: 24px;
-    background: #ed3b44;
+    background: var(--primary-color);
   }
   .benefits-icon {
     width: 24px;
@@ -79,7 +79,10 @@
     border-radius: 60px;
     padding: 18px 36px;
     width: fit-content;
-    background: #1c1d20;
+    background: var(--primary-color);
+  }
+  .benefits-btn:hover {
+    background: var(--primary-hover-color);
   }
   @media (min-width: 768px) {
     .benefits-content {
