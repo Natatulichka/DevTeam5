@@ -208,12 +208,12 @@
   height: 28px;
 }
 .div-order-btn {
-  display: block;
+  display: flex;
   position: absolute;
   left: 40%;
   right: 33%;
   bottom: 20%;
-  width: 164px;
+  width: 100%;
   height: 45px;
 }
 .header-pop-up-btn {
