@@ -1,6 +1,7 @@
 import iziToast from "izitoast";
 import imageUrlError from '../img/footer/icon-error.svg';
 import refs from './refs';
+import axios from 'axios';
 
 refs.contactForm.addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -24,24 +25,24 @@ refs.contactForm.addEventListener('submit', async function (e) {
         });
         return;
     }
-    // Save to Local Storage
-    localStorage.setItem('email', email);
-    localStorage.setItem('comment', comments);
     const dataLoad = {
         email: email,
         comment: comments,
     };
+
+    // Save to Local Storage
+    localStorage.setItem('email', email);
+    localStorage.setItem('comment', comments);
+    
     // Request on API server
     try {
-        const response = await fetch('https://portfolio-js.b.goit.study/api/requests', {
-            method: 'POST',
+        const response = await axios.post('requests', dataLoad, {
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(dataLoad)
         });
-        const data = await response.json();
-
+        const data = response.data;
         if (data.error) {
             iziToast.error({
             title: 'Error!',
