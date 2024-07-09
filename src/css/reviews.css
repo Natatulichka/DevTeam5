@@ -80,6 +80,8 @@
   height: 52px;
   fill: var(--bg-color);
   stroke: #fafafa;
+  transition: stroke var(--transition-duration)
+    var(--transition-timing-function);
 }
 .arrow-reviews:hover {
   stroke: var(--primary-hover-color);
@@ -265,7 +267,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   .dash {
     width: 35px;
     height: 15px;
