@@ -1,3 +1,4 @@
+
 /* Основні стилі */
 .section.faq {
     padding-bottom: 64px;
@@ -34,6 +35,9 @@
     align-items: stretch; 
     margin-bottom: 16px;
 }
+.question-wrapper::after {
+    content: none;
+  }
 .question-title {
     max-width: calc(100% - 60px);
     font-weight: 600;
@@ -57,26 +61,19 @@
 }
 
 .faq-arrow-button svg {
+    stroke: #fafafa;
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease; 
 }
 
-.faq-arrow-button.open svg {
+.is-active.faq-arrow-button svg {
     transform: rotate(180deg); 
 }
 
 .faq-accordion-panel {
     width: 100%;
     overflow: hidden;
-    max-height: 0; 
-    opacity: 0; 
-    transition: max-height 0.4s ease, opacity 0.4s ease; 
-}
-.faq-accordion-panel.open {
-    max-height: 100vh; 
-    opacity: 1; 
-    transition: max-height 0.4s ease, opacity 0.4s ease; 
 }
 
 .answer-text {
@@ -99,7 +96,10 @@
         width: 40px;
         height: 40px;
     }
-   
+    .faq-accordion-item:first-child .question-title {
+        width: 574px; 
+    }
+    
     .question-title:last-of-type {
         width: 485px;
     }
@@ -153,4 +153,5 @@
         order: 3;
         padding-left: 32px;
     }
+
 }
