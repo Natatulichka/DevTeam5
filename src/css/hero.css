@@ -64,6 +64,7 @@
 @media only screen and (min-width: 768px) {
   .section.hero-section.theme-blue {
     background: url(../img/hero/blue-theme/tablet_hero_blue@1x.png) no-repeat;
+    height: 1024px;
   }
 }
 
@@ -79,6 +80,7 @@
 @media only screen and (min-width: 1440px) {
   .section.hero-section.theme-blue {
     background: url(../img/hero/blue-theme/desktop_hero_blue@1x.png) no-repeat;
+    height: 900px;
   }
 }
 
