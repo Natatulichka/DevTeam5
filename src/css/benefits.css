@@ -46,7 +46,7 @@
   height: 24px;
   stroke-width: 2px;
   stroke: #fafafa;
-  fill: #ed3b44;
+  fill: var(--primary-color);
 }
 .benefits-info {
   display: flex;
