@@ -14,8 +14,10 @@ const swiper = new Swiper('.project .swiper', {
   spaceBetween: 28,
   // Navigation arrows
   navigation: {
-    nextEl: '.project .swiper-button-next',
-    prevEl: '.project .swiper-button-prev',
+    nextEl: '.swiper-button-next-project',
+    prevEl: '.swiper-button-prev-project',
+    // nextEl: '.project .swiper-button-next',
+    // prevEl: '.project .swiper-button-prev',
   },
   speed: 1000,
 
