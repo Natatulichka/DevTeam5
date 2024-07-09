@@ -1,3 +1,7 @@
+.section.project {
+  position: relative;
+  overflow: hidden;
+}
 .project-container {
   margin: 0 auto;
   min-width: 288px;
@@ -104,6 +108,11 @@
   bottom: -256px;
   left: -35vw;
 }
+/* .project-btn-prev.swiper-button-prev::after,
+.project-btn-next.swiper-button-next::after {
+  
+ 
+} */
 
 .project .swiper-button-disabled.swiper-button-prev::after {
   content: url('../img/project/arrow-disabled.svg');

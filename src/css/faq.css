@@ -31,10 +31,11 @@
 .question-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Виправлено align-items на center */
+    align-items: center; 
     margin-bottom: 16px;
 }
 .question-title {
+    max-width: calc(100% - 60px);
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
@@ -42,18 +43,14 @@
     color: #fafafa;
     margin: 0;
 }
-.question-title:last-of-type {
-    width: 289px;
-}
-
 .faq-arrow-button {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     border: 1px solid rgba(250, 250, 250, 0.2);
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -93,16 +90,11 @@
         width: 40px;
         height: 40px;
     }
-    .question-title {
-        width: 574px;
-    }
+   
     .question-title:last-of-type {
         width: 485px;
     }
 
-    .faq-accordion-item:first-of-type .question-title {
-        width: 590px;
-    }
     .faq-accordion-panel {
         width: 656px;
     }

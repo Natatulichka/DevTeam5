@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const panel = item.querySelector('.faq-accordion-panel');
 
         button.addEventListener('click', () => {
-            button.classList.toggle('open'); // Додає або видаляє клас 'open' для зміни напрямку стрілочки
-            panel.classList.toggle('open'); // Додає або видаляє клас 'open' для відображення відповіді
+            button.classList.toggle('open'); 
+            panel.classList.toggle('open'); 
         });
 
-        // Перевірка початкового стану панелі акордеону
+    
         if (panel.style.display === 'block') {
             button.classList.add('open');
         }

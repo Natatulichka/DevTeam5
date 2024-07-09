@@ -61,6 +61,9 @@ body {
 .container {
   padding: 0 16px;
 }
+html {
+  scroll-behavior: smooth;
+}
 @media screen and (min-width: 375px) {
   .section {
     max-width: 375px;
