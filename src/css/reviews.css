@@ -70,7 +70,9 @@
   margin-right: auto;
   box-sizing: border-box;
 }
-
+.navigation-buttons-reviews.hidden {
+  display: none;
+}
 .swiper-button-next-reviews {
   transform: rotate(180deg);
 }

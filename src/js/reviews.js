@@ -3,6 +3,7 @@ import { renderReviews } from './render-reviews';
 import iziToast from 'izitoast';
 import imageUrlError from '../img/footer/icon-error.svg';
 import refs from './refs';
+import { disableLoader, enableLoader } from './loader';
 
 fetchAndRenderReviews();
 
@@ -11,6 +12,7 @@ async function fetchAndRenderReviews() {
     enableLoader();
     const reviews = await fetchReviews();
     disableLoader();
+    btnsVisible();
     renderReviews(reviews, refs.reviewsList);
   } catch (error) {
     disableLoader();
@@ -34,10 +36,6 @@ async function fetchAndRenderReviews() {
   }
 }
 
-//Loader
-function enableLoader() {
-  refs.loader.classList.remove('hidden');
-}
-function disableLoader() {
-  refs.loader.classList.add('hidden');
+function btnsVisible() {
+  refs.swiperBtns.classList.remove('hidden');
 }
