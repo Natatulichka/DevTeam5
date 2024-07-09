@@ -4,7 +4,6 @@ export default {
   burgerEl: document.querySelector('.header-burger-btn'),
   closeBtnEl: document.querySelector('.header-close-menu-btn'),
 
-
   selectThemeElem: document.querySelector('#theme-select'),
   heroSectionElem: document.querySelector('#hero-section'),
   bodyElem: document.querySelector('body'),
@@ -19,4 +18,6 @@ export default {
   modalMessageEl: document.querySelector('.modal-message'),
   //Reviews
   reviewsList: document.querySelector('#reviews-list'),
+  //Loader
+  loader: document.querySelector('.load-container'),
 };
