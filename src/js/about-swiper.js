@@ -7,6 +7,12 @@ import 'swiper/css/bundle';
 const swiper = new Swiper('.about .swiper', {
   slidesPerView: 2,
 
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: true,
+    pauseOnMouseEnter: true,
+      },
+
   spaceBetween: 0,
 
   loop: true,
