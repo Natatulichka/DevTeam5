@@ -6,7 +6,7 @@ export default {
   closeModalEl: document.querySelector('.header-pop-up-list'),
   closeModEl: document.querySelector('.header-pop-up-btn'),
   openMenuEl: document.querySelector('.header-menu-list'),
-  menuListEl:document.querySelector('header-menu-list-btn'),
+  menuListEl: document.querySelector('header-menu-list-btn'),
   //
   selectThemeElem: document.querySelector('#theme-select'),
   heroSectionElem: document.querySelector('#hero-section'),
@@ -22,6 +22,8 @@ export default {
   modalMessageEl: document.querySelector('.modal-message'),
   //Reviews
   reviewsList: document.querySelector('#reviews-list'),
+  swiperBtns: document.querySelector('.navigation-buttons-reviews'),
+
   //Loader
   loader: document.querySelector('.load-container'),
 };
