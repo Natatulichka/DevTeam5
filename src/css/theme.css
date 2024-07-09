@@ -1,34 +1,45 @@
-select[data-choose-theme] {
-  width: 200px; /* Ширина випадаючого списку */
-  padding: 10px; /* Внутрішні відступи */
-  font-size: 16px; /* Розмір шрифту */
-  color: #333; /* Колір тексту */
-  background-color: #f9f9f9; /* Колір фону */
-  border: 1px solid #ccc; /* Рамка */
-  border-radius: 5px; /* Закруглені кути */
-  appearance: none; /* Приховує стандартну стрілку браузера */
-  -webkit-appearance: none; /* Для Safari */
-  -moz-appearance: none; /* Для Firefox */
-}
-
-/* Стилізація при наведенні */
-select[data-choose-theme]:hover {
-  border-color: #888;
-}
-
-/* Стилізація при фокусі */
-select[data-choose-theme]:focus {
-  outline: none;
-  border-color: #555;
-  box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
-}
-
-select[data-choose-theme] option {
-  /* Ви можете стилізувати текст, але інші властивості обмежені */
-  color: #333;
-  background-color: #fff; /* Колір фону для кожної опції */
-}
 .theme-container {
   width: 320px;
   margin: 0 auto;
+}
+/* Togle */
+
+.toggle-container {
+  /* position: absolute; */
+}
+
+#theme-toggle {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: var(--primary-hover-color);
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-label::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+#theme-toggle:checked + .toggle-label {
+  background-color: var(--primary-hover-color);
+}
+
+#theme-toggle:checked + .toggle-label::after {
+  transform: translateX(30px);
 }
