@@ -11,6 +11,7 @@ const swiper = new Swiper('.about .swiper', {
     delay: 1500,
     disableOnInteraction: true,
     pauseOnMouseEnter: true,
+    stopOnLastSlide: false,
       },
 
   spaceBetween: 0,
