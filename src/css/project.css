@@ -74,7 +74,7 @@
 
 .project .swiper-container {
   position: relative;
-  margin-bottom: 116px;
+  margin-bottom: 84px;
 }
 
 .project .swiper {
@@ -94,6 +94,10 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -84px;
 }
 
 .swiper-button-next-project {
@@ -115,33 +119,6 @@
 .arrow-project:hover {
   cursor: pointer;
 }
-/* .project .project-btn-prev::after {
-  content: url('./img/project/arrow-active.svg');
-  transform: rotate(180deg);
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  bottom: -256px;
-  right: -35vw;
-}
-
-.project .project-btn-next::after {
-  content: url('./img/project/arrow-active.svg');
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  bottom: -256px;
-  left: -35vw;
-}
-
-.project .swiper-button-disabled.swiper-button-prev::after {
-  content: url('./img/project/arrow-disabled.svg');
-  transform: rotate(180deg);
-}
-
-.project .swiper-button-disabled.swiper-button-next::after {
-  content: url('./img/project/arrow-disabled.svg');
-} */
 
 @media screen and (min-width: 375px) {
   .project-container {
@@ -190,7 +167,7 @@
   }
 
   .project .swiper-container {
-    margin-bottom: 196px;
+    margin-bottom: 164px;
   }
 
   .project .swiper {
@@ -206,22 +183,9 @@
     height: 68px;
     gap: 20px;
     margin-top: 32px;
+    bottom: -132px;
   }
 }
-/* .project .project-btn-prev::after {
-    width: 68px;
-    height: 68px;
-    bottom: -408px;
-    left: 265px;
-  }
-
-  .project .project-btn-next::after {
-    width: 68px;
-    height: 68px;
-    bottom: -424px;
-    right: 265px;
-  }
-} */
 
 @media screen and (min-width: 1440px) {
   .project-container {
@@ -233,7 +197,7 @@
     flex-direction: row;
     justify-content: center;
     height: 625px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
   .project .swiper-container {
@@ -258,13 +222,7 @@
     margin-bottom: 223px;
   }
 
-  .project .project-btn-prev::after {
-    bottom: -407px;
-    left: -85px;
-  }
-
-  .project .project-btn-next::after {
-    bottom: -423px;
-    right: 608px;
+  .navigation-buttons-project {
+    left: 0;
   }
 }
