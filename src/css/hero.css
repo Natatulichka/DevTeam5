@@ -211,10 +211,12 @@
   align-items: center;
   justify-content: center;
   transition: border-color var(--transition-duration)
-    var(--transition-timing-function);
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
 }
 
 .hero-contact-link:hover {
+  color: var(--primary-hover-color);
   border-color: rgba(250, 250, 250, 1);
 }
 

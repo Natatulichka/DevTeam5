@@ -1,8 +1,5 @@
 .section.reviews-section {
-  position: relative;
   overflow: hidden;
-}
-.reviews-container.swiper {
 }
 .reviews-title {
   color: rgba(250, 250, 250, 0.6);
@@ -38,34 +35,59 @@
   line-height: 24px;
   letter-spacing: -0.02em;
   margin-top: 8px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 .review-card.swiper-slide {
   height: 302px;
   padding: 32px 24px 32px 24px;
   border: 1px solid #fafafa33;
   border-radius: 20px;
-  min-width: 344px;
+  width: 344px;
   box-sizing: border-box;
 }
 /*Swiper  navigations*/
 .navigation-buttons-reviews {
-  padding-top: 32px;
   display: flex;
   width: 116px;
   height: 52px;
   gap: 12px;
-  margin: 0 auto;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
 }
-.swiper-button-prev-reviews {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: 1px solid #fafafa33;
-}
+
 .swiper-button-next-reviews {
+  transform: rotate(180deg);
+}
+
+.arrow-reviews {
   width: 52px;
   height: 52px;
-  border-radius: 50%;
-  border: 1px solid #fafafa33;
+  fill: var(--bg-color);
+  stroke: #fafafa;
+}
+.arrow-reviews:hover {
+  stroke: var(--primary-hover-color);
+}
+.swiper-button-disabled > .arrow-reviews {
+  stroke: #3b3b3b;
+}
+.arrow-reviews:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .arrow-reviews {
+    width: 68px;
+    height: 68px;
+  }
+  .navigation-buttons-reviews {
+    width: 116px;
+    height: 68px;
+    gap: 20px;
+    margin-top: 32px;
+  }
 }
