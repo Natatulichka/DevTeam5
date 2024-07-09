@@ -79,6 +79,8 @@
   .header-items {
     color: #fafafa;
     text-align: center;
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
   }
 }
 .header-items:hover {
@@ -127,6 +129,8 @@
     width: 60px;
     text-decoration: underline;
     border: none;
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
   }
   .header-menu-list-btn:hover {
     color: var(--primary-hover-color);
@@ -144,11 +148,11 @@
     visibility: hidden;
     pointer-events: none;
   }
-.header-menu-list.is-on {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
+  .header-menu-list.is-on {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 .burgerr {
   font-size: 36px;
@@ -174,9 +178,35 @@
   visibility: hidden;
   pointer-events: none;
   transition: var(--transition-timing-function);
-  background: url(../img/header/Glass-effect-@2x.png) no-repeat;
   background-color: #1c1d20;
 }
+/* theme-red */
+.header-pop-up-menu.theme-red {
+  background: url(../img/header/Glass-effect-@1x.png) no-repeat;
+}
+/* retina red */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .header-pop-up-menu.theme-red {
+    background: url(../img/header/Glass-effect-@2x.png) no-repeat;
+    background-size: 375px 812px;
+  }
+}
+/* theme-blue */
+.header-pop-up-menu.theme-blue {
+  background: url(../img/header/blue-theme/mobile_menu_blue@1x.png) no-repeat;
+}
+/* Retina blue */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .header-pop-up-menu.theme-blue {
+    background: url(../img/header/blue-theme/mobile_menu_blue@2x.png) no-repeat;
+    background-size: 375px 812px;
+  }
+}
+/*  */
 .header-pop-up-menu.is-on {
   opacity: 1;
   visibility: visible;
