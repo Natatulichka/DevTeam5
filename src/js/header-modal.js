@@ -3,6 +3,10 @@ import refs from './refs';
 // <!-- Modal-Window -->
 refs.burgerEl.addEventListener('click', openWindow);
 
+refs.closeModalEl.addEventListener('click', closeWindow);
+
+refs.closeModEl.addEventListener('click', closeWindow);
+
 function openWindow() {
     refs.popupEl.classList.add('is-on')
 }
