@@ -107,6 +107,7 @@
 
 .about .arrow-accordion-about {
   transform: rotate(180deg);
+  stroke: #fafafa;
 }
 
 .about .ac.is-active .arrow-accordion-about {
