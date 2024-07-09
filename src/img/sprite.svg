@@ -2,11 +2,11 @@
 <defs>
 
 <symbol id="arrow-up" viewBox="0 0 20 20">
-    <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2"/>
+    <path d="M15 12.5L10 7.5L5 12.5"  stroke-width="2"/>
 </symbol>
 
 <symbol id="arrow-down" viewBox="0 0 20 20">
-    <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2"/>
+    <path d="M15 7.5L10 12.5L5 7.5" stroke-width="2"/>
 </symbol>
 
 <symbol id="arrow-black-left" viewBox="0 0 32 32">
@@ -55,12 +55,12 @@
     <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M4 11.333h24M4 20.667h24"></path>
 </symbol>
 
-<symbol id="icon-arrow" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M6.66699 20H33.3336" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M23.333 10L33.333 20L23.333 30" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<symbol id="icon-arrow" viewBox="0 0 40 40">
+  <path d="M6.66699 20H33.3336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M23.333 10L33.333 20L23.333 30"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
 
-<symbol id="icon-arrow-swiper-1" viewBox="0 0 32 32">
+<symbol id="icon-arrow-swiper-1" viewBox="0 0 32 32" fill="none">
     <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4706" d="M16 31.765c-8.707 0-15.765-7.058-15.765-15.765s7.058-15.765 15.765-15.765c8.707 0 15.765 7.058 15.765 15.765s-7.058 15.765-15.765 15.765z"></path>
     <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.9412" d="M21.020 16h-10.040"></path>
     <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.9412" d="M14.745 19.765l-3.765-3.765 3.765-3.765"></path>
