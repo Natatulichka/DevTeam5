@@ -139,7 +139,16 @@
     justify-content: center;
     width: 67px;
     height: 91px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
+.header-menu-list.is-on {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 }
 .burgerr {
   font-size: 36px;
@@ -164,8 +173,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition-timing-function);
   background: url(../img/header/Glass-effect-@2x.png) no-repeat;
   background-color: #1c1d20;
 }
@@ -208,7 +216,7 @@
   height: 28px;
 }
 .div-order-btn {
-  display: flex;
+  display: block;
   position: absolute;
   left: 40%;
   right: 33%;

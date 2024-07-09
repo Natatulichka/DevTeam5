@@ -1,9 +1,8 @@
-
-function headerMenuFunction() {
-  var x = document.getElementById("");
-  if (x.className.indexOf("") == -1) { 
-    x.className += "";
-  } else {
-    x.className = x.className.replace("", "");
-  }
+import refs from './refs';
+function openMenu() {
+    refs.openMenuEl.classList.add('is-on')
 }
+function closeMenu() {
+    refs.openMenuEl.classList.remove('is-on')
+}
+refs.menuListEl.addEventListener('click', openMenu);
