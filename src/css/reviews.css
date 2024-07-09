@@ -267,7 +267,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   .dash {
     width: 35px;
     height: 15px;
