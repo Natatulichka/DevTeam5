@@ -4,7 +4,7 @@ const swiper = new Swiper('.project .swiper', {
   // Optional parameters
   //   direction: 'vertical',
   loop: false,
-  onlyInViewport: false,
+  onlyInViewport: true,
   mousewheel: true,
 
   keyboard: {
