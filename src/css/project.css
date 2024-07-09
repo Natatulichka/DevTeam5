@@ -1,172 +1,231 @@
-.section.project {
-  position: relative;
-  overflow: hidden;
-}
 .project-container {
-  height: 925px;
+  margin: 0 auto;
+  min-width: 288px;
 }
-.project-container > h2 {
+
+.project-title {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
-}
-.project-swiper {
-  display: flex;
-  border-radius: 24px;
-  height: 812px;
-  margin: 32px 0;
-}
-.project-swiper-slide {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
+  margin-bottom: 32px;
 }
 
-.project-dscr-list {
+.project-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  background-color: #fafafa;
-  color: #1c1d20;
-  padding: 32px;
+  flex-direction: column;
+  gap: 0;
 }
+
+.static {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background-color: #fafafa;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
 .project-achive {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 6px;
+  margin-bottom: 96px;
 }
 
-.project-dscr-list > h2 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17em;
-  letter-spacing: -0.03em;
-  margin: 96px 0 32px;
-  text-align: left;
-}
 .achive {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
-  height: 45px;
-}
-.project-dscr-list > a {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
   letter-spacing: -0.02em;
-  background-color: var(--primary-color);
-  color: #fafafa;
+  color: #1c1d20;
+}
+
+.project-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  color: #1c1d20;
+  margin-bottom: 32px;
+  width: 279px;
+}
+
+.project .see-project {
+  text-align: center;
   border-radius: 60px;
   padding: 13px 32px;
   width: 141px;
   height: 45px;
-}
-.see-project:hover {
-  background-color: var(--primary-hover-color);
+  background: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
-.project-picture {
+.project .see-project:hover {
+  background: var(--primary-hover-color);
+}
+
+.project .swiper-container {
+  position: relative;
+  margin-bottom: 116px;
+}
+
+.project .swiper {
   padding: 100px 16px;
-  width: 100%;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background: #242527;
   height: 395px;
+  position: unset;
 }
-.project-list-item-img {
-  min-width: 100%;
-  align-items: center;
-}
-.navigation-buttons-project {
-  padding-top: 32px;
-  display: flex;
-  width: 116px;
-  height: 52px;
-  gap: 12px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.project-btn-prev.swiper-button-prev {
+
+.project .project-btn-prev::after {
+  content: url('../img/project/arrow-active.svg');
+  transform: rotate(180deg);
   width: 52px;
   height: 52px;
-  border-radius: 50%;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  content: url('../img/project/arrow-narrow-left.svg');
+  position: absolute;
+  bottom: -256px;
+  right: -35vw;
 }
-.project-btn-next.swiper-button-next {
+
+.project .project-btn-next::after {
+  content: url('../img/project/arrow-active.svg');
   width: 52px;
   height: 52px;
-  border-radius: 50%;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  content: url('../img/project/arrow-narrow-right.svg');
+  position: absolute;
+  bottom: -256px;
+  left: -35vw;
 }
-/* .project-btn-prev.swiper-button-prev::after,
-.project-btn-next.swiper-button-next::after {
-  
- 
-} */
+
+.project .swiper-button-disabled.swiper-button-prev::after {
+  content: url('../img/project/arrow-disabled.svg');
+  transform: rotate(180deg);
+}
+
+.project .swiper-button-disabled.swiper-button-next::after {
+  content: url('../img/project/arrow-disabled.svg');
+}
+
+@media screen and (min-width: 375px) {
+  .project-container {
+    width: 375px;
+  }
+
+  .project .project-btn-next::after {
+    left: unset;
+    right: 106px;
+  }
+
+  .project .project-btn-prev::after {
+    right: unset;
+    left: 106px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .project-container {
-    height: 1379px;
+    width: 768px;
   }
-  .project-swiper {
-    height: 1191px;
-  }
-  .project-dscr-list > h2 {
-    font-size: 44px;
-    line-height: 1em;
-    margin: 164px 0 32px;
-  }
-  .project-achive {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .project-dscr-list > a {
-    padding: 18px 50px;
-    width: 177px;
-    height: 55px;
-  }
-  .project-dscr-list {
+
+  .static {
     padding: 64px;
   }
 
-  .project-picture {
-    height: 100%;
+  .project-achive {
+    margin-bottom: 164px;
+  }
+
+  .achive {
+    padding: 18px;
+  }
+
+  .project-text {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    width: 494px;
+  }
+
+  .project .see-project {
+    padding: 18px 50px;
+  }
+
+  .project .swiper-container {
+    margin-bottom: 196px;
+  }
+
+  .project .swiper {
     padding: 120px 45px;
+    height: 625px;
+  }
+
+  .project .project-btn-prev::after {
+    width: 68px;
+    height: 68px;
+    bottom: -408px;
+    left: 265px;
+  }
+
+  .project .project-btn-next::after {
+    width: 68px;
+    height: 68px;
+    bottom: -424px;
+    right: 265px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .project-container {
-    height: 681px;
-    padding: 0 32px;
+    width: 1440px;
   }
-  .project-swiper {
-    height: 625px;
-    margin: 32px 0;
-  }
-  .swiper-slide.project-swiper-slide {
+
+  .project-wrapper {
     display: flex;
-    width: 1376px;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    height: 625px;
+    margin-bottom: 100px;
   }
-  .project-dscr-list {
+
+  .project .swiper-container {
+    margin-bottom: unset;
+  }
+
+  .part {
     width: 50%;
   }
-  .project-dscr-list > h2 {
-    margin-top: 223px;
-    margin-bottom: 32px;
+
+  .static {
+    border-radius: 24px 0 0 24px;
   }
-  .project-picture {
-    width: 50%;
+
+  .project .swiper {
+    border-radius: 0 24px 24px 0;
     padding: 120px 37px;
+    width: 100%;
+  }
+
+  .project-achive {
+    margin-bottom: 223px;
+  }
+
+  .project .project-btn-prev::after {
+    bottom: -407px;
+    left: -85px;
+  }
+
+  .project .project-btn-next::after {
+    bottom: -423px;
+    right: 608px;
   }
 }

@@ -15,9 +15,17 @@ const swiper = new Swiper('.project .swiper', {
   // Navigation arrows
   navigation: {
     nextEl: '.project .swiper-button-next',
-    prevEl: '.project.swiper-button-prev',
+    prevEl: '.project .swiper-button-prev',
   },
   speed: 1000,
+
+  effect: 'cube',
+  cubeEffect: {
+    slideShadows: true,
+    shadow: false,
+  },
+
+  direction: 'vertical',
 
   grabCursor: true,
 });
