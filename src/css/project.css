@@ -85,9 +85,38 @@
   height: 395px;
   position: unset;
 }
+.navigation-buttons-project {
+  display: flex;
+  width: 116px;
+  height: 52px;
+  gap: 12px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
 
-.project .project-btn-prev::after {
-  content: url('../img/project/arrow-active.svg');
+.swiper-button-next-project {
+  transform: rotate(180deg);
+}
+
+.arrow-project {
+  width: 52px;
+  height: 52px;
+  fill: var(--bg-color);
+  stroke: #fafafa;
+}
+.arrow-project:hover {
+  stroke: var(--primary-hover-color);
+}
+.swiper-button-disabled > .arrow-project {
+  stroke: #3b3b3b;
+}
+.arrow-project:hover {
+  cursor: pointer;
+}
+/* .project .project-btn-prev::after {
+  content: url('./img/project/arrow-active.svg');
   transform: rotate(180deg);
   width: 52px;
   height: 52px;
@@ -97,7 +126,7 @@
 }
 
 .project .project-btn-next::after {
-  content: url('../img/project/arrow-active.svg');
+  content: url('./img/project/arrow-active.svg');
   width: 52px;
   height: 52px;
   position: absolute;
@@ -106,13 +135,13 @@
 }
 
 .project .swiper-button-disabled.swiper-button-prev::after {
-  content: url('../img/project/arrow-disabled.svg');
+  content: url('./img/project/arrow-disabled.svg');
   transform: rotate(180deg);
 }
 
 .project .swiper-button-disabled.swiper-button-next::after {
-  content: url('../img/project/arrow-disabled.svg');
-}
+  content: url('./img/project/arrow-disabled.svg');
+} */
 
 @media screen and (min-width: 375px) {
   .project-container {
@@ -168,8 +197,18 @@
     padding: 120px 45px;
     height: 625px;
   }
-
-  .project .project-btn-prev::after {
+  .arrow-project {
+    width: 68px;
+    height: 68px;
+  }
+  .navigation-buttons-project {
+    width: 156px;
+    height: 68px;
+    gap: 20px;
+    margin-top: 32px;
+  }
+}
+/* .project .project-btn-prev::after {
     width: 68px;
     height: 68px;
     bottom: -408px;
@@ -182,7 +221,7 @@
     bottom: -424px;
     right: 265px;
   }
-}
+} */
 
 @media screen and (min-width: 1440px) {
   .project-container {
