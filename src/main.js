@@ -8,3 +8,7 @@ import './js/change-theme';
 import './js/faq';
 import './js/reviews';
 import './js/reviews-swiper';
+import './js/header-modal';
+import './js/header-menu-list';
+
+
