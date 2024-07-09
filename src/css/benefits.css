@@ -80,11 +80,12 @@
     padding: 18px 36px;
     width: fit-content;
     background: var(--primary-color);
+    transition: background var(--transition-duration)
+    var(--transition-timing-function);
   }
   .benefits-btn:hover {
     background: var(--primary-hover-color);
-    transition: background var(--transition-duration)
-    var(--transition-timing-function);
+  
   }
   @media (min-width: 768px) {
     .benefits-content {
