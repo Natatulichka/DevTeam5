@@ -215,6 +215,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  background-color: #1c1d20;
 }
 .header-pop-up-list {
   font-weight: 500;
