@@ -60,14 +60,11 @@
     transition: transform 0.3s ease; 
 }
 
-.faq-arrow-button svg {
+.icon-faq {
     stroke: #fafafa;
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease; 
 }
 
-.is-active.faq-arrow-button svg {
+.is-active .icon-faq {
     transform: rotate(180deg); 
 }
 
