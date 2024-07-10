@@ -141,6 +141,10 @@
     background: transparent;
     text-align: center;
     justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration-skip-ink: none;
     width: 67px;
     height: 91px;
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -189,20 +193,20 @@
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .header-pop-up-menu.theme-red {
-    background: url(../img/header/Glass-effect-@2x.png) no-repeat;
+    background: url(./img/header/Glass-effect-@2x.png) no-repeat;
     background-size: 375px 812px;
   }
 }
 /* theme-blue */
 .header-pop-up-menu.theme-blue {
-  background: url(../img/header/blue-theme/mobile_menu_blue@1x.png) no-repeat;
+  background: url(./img/header/blue-theme/mobile_menu_blue@1x.png) no-repeat;
 }
 /* Retina blue */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .header-pop-up-menu.theme-blue {
-    background: url(../img/header/blue-theme/mobile_menu_blue@2x.png) no-repeat;
+    background: url(./img/header/blue-theme/mobile_menu_blue@2x.png) no-repeat;
     background-size: 375px 812px;
   }
 }
