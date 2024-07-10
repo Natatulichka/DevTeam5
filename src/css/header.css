@@ -193,20 +193,20 @@
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .header-pop-up-menu.theme-red {
-    background: url(./img/header/Glass-effect-@2x.png) no-repeat;
+    background: url(../img/header/Glass-effect-@2x.png) no-repeat;
     background-size: 375px 812px;
   }
 }
 /* theme-blue */
 .header-pop-up-menu.theme-blue {
-  background: url(./img/header/blue-theme/mobile_menu_blue@1x.png) no-repeat;
+  background: url(../img/header/blue-theme/mobile_menu_blue@1x.png) no-repeat;
 }
 /* Retina blue */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .header-pop-up-menu.theme-blue {
-    background: url(./img/header/blue-theme/mobile_menu_blue@2x.png) no-repeat;
+    background: url(../img/header/blue-theme/mobile_menu_blue@2x.png) no-repeat;
     background-size: 375px 812px;
   }
 }
