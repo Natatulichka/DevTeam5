@@ -124,6 +124,8 @@
     text-align: center;
     flex-wrap: nowrap;
     justify-items: center;
+    font-size: 16px;
+    font-weight: 500;
     padding: 10px;
     height: 39px;
     width: 60px;
