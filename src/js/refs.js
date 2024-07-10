@@ -7,6 +7,7 @@ export default {
   closeModEl: document.querySelector('.pop-up-order-link'),
   openMenuEl: document.querySelector('.header-menu-list'),
   menuListEl: document.querySelector('.header-menu-btn'),
+  headerSection: document.querySelector('.header'),
   //
   selectThemeElem: document.querySelector('#theme-select'),
   heroSectionElem: document.querySelector('#hero-section'),
@@ -26,4 +27,7 @@ export default {
 
   //Loader
   loader: document.querySelector('.load-container'),
+
+  //To-the-top button
+  upBtn: document.querySelector('.up-button'),
 };
