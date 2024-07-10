@@ -16,8 +16,8 @@
 }
 
 .up-button-img {
-  width: 25px;
-  height: 25px;
+  width: 36px;
+  height: 36px;
 }
 
 .up-button:hover .up-button-img {
@@ -29,13 +29,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .up-button-img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
   .up-button-img {
     width: 40px;
     height: 40px;
