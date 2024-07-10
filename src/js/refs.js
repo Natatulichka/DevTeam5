@@ -30,4 +30,7 @@ export default {
 
   //To-the-top button
   upBtn: document.querySelector('.up-button'),
+
+  toggleContainer: document.querySelector('.toggle-container'),
+  toggle: document.querySelector('#theme-toggle'),
 };

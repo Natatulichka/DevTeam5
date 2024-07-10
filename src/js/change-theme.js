@@ -11,11 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     hero.classList.add('theme-blue');
     mobile.classList.add('theme-blue');
     document.querySelector('.toggle-container').classList.remove('hidden');
+    document.querySelector('.order-link').classList.remove('hidden');
   } else {
     body.classList.add('theme-red');
     hero.classList.add('theme-red');
     mobile.classList.add('theme-red');
     document.querySelector('.toggle-container').classList.remove('hidden');
+    document.querySelector('.order-link').classList.remove('hidden');
   }
 
   toggle.addEventListener('change', () => {
