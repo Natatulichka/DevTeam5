@@ -10,5 +10,6 @@ import './js/reviews';
 import './js/reviews-swiper';
 import './js/header-modal';
 import './js/header-menu-list';
+import './js/up-button'
 
 
