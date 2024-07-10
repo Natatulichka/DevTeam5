@@ -1,8 +1,6 @@
 import refs from './refs';
 function openMenu() {
-    refs.openMenuEl.classList.add('is-on')
+  refs.openMenuEl.classList.toggle('is-on');
 }
-function closeMenu() {
-    refs.openMenuEl.classList.remove('is-on')
-}
+
 refs.menuListEl.addEventListener('click', openMenu);
