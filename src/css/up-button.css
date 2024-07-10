@@ -24,7 +24,7 @@
   stroke: var(--primary-hover-color);
 }
 
-.up-button.hidden {
+.up-button.is-hidden {
   display: none;
 }
 
