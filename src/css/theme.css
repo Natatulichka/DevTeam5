@@ -1,12 +1,8 @@
-.theme-container {
-  width: 320px;
-  margin: 0 auto;
-}
 /* Togle */
 
-/* .toggle-container {
-  position: absolute;
-} */
+.toggle-container.hidden {
+  display: none;
+}
 
 #theme-toggle {
   display: none;

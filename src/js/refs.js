@@ -26,4 +26,5 @@ export default {
 
   //Loader
   loader: document.querySelector('.load-container'),
+  toggle: document.getElementById('theme-toggle'),
 };
