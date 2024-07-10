@@ -2,11 +2,11 @@ export default {
   // Header Elements:
   popupEl: document.querySelector('.header-pop-up-menu'),
   burgerEl: document.querySelector('.header-burger-btn'),
-  closeBtnEl: document.querySelector('.header-close-menu-btn'),
-  closeModalEl: document.querySelector('.header-pop-up-list'),
-  closeModEl: document.querySelector('.header-pop-up-btn'),
+  closeBtnEl: document.querySelector('.pop-up-close-btn'),
+  closeModalEl: document.querySelector('.pop-up-list'),
+  closeModEl: document.querySelector('.pop-up-order-link'),
   openMenuEl: document.querySelector('.header-menu-list'),
-  menuListEl: document.querySelector('header-menu-list-btn'),
+  menuListEl: document.querySelector('.header-menu-btn'),
   //
   selectThemeElem: document.querySelector('#theme-select'),
   heroSectionElem: document.querySelector('#hero-section'),
