@@ -246,6 +246,9 @@
   .order-link {
     display: block;
   }
+    .order-link.hidden {
+    display: none;
+  }
 }
 
 /*=====Desktop version=====*/
