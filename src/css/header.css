@@ -120,10 +120,6 @@
   padding: 0 16px;
   padding-top: 37.19vh;
   padding-bottom: 7.88vh;
-  background-image: url(../img/header/Glass-effect-@1x.png);
-  background-repeat: no-repeat;
-  background-color: #1c1d20;
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -137,6 +133,7 @@
     opacity var(--transition-duration) var(--transition-timing-function),
     visibility var(--transition-duration) var(--transition-timing-function);
 }
+
 .header-pop-up-menu.is-open {
   transform: translateX(0);
   opacity: 1;
@@ -158,7 +155,7 @@
   width: 28px;
   height: 28px;
 }
-.pop-up-content{
+.pop-up-content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -176,9 +173,15 @@
   text-decoration: underline;
   color: #fafafa;
 }
-.pop-up-btn-div{
+.pop-up-list-item {
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+.pop-up-list-item:hover {
+  color: var(--primary-hover-color);
+}
+.pop-up-btn-div {
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 64px;
 }
 .pop-up-order-link {
@@ -195,11 +198,17 @@
   color: #fafafa;
   line-height: 1;
   bottom: 25%;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
-
+.pop-up-order-link:hover {
+  background-color: var(--primary-hover-color);
+}
 /* theme-red */
 .header-pop-up-menu.theme-red {
-  background: #1c1d20 url(../img/header/Glass-effect-@1x.png) no-repeat;
+  background: url(../img/header/Glass-effect-@1x.png), #1c1d20;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 /* retina red */
@@ -207,22 +216,27 @@
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .header-pop-up-menu.theme-red {
-    background: #1c1d20 url(../img/header/Glass-effect-@2x.png) no-repeat;
+    background: url(../img/header/Glass-effect-@2x.png), #1c1d20;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 }
 /* theme-blue */
 .header-pop-up-menu.theme-blue {
-  background: #1c1d20 url(../img/header/blue-theme/mobile_menu_blue@1x.png)
-    no-repeat;
+  background: url(../img/header/blue-theme/mobile_menu_blue@1x.png), #1c1d20;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* Retina blue */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .header-pop-up-menu.theme-blue {
-    background: #1c1d20 url(../img/header/blue-theme/mobile_menu_blue@2x.png)
-      no-repeat;
+    background: url(../img/header/blue-theme/mobile_menu_blue@2x.png), #1c1d20;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 }

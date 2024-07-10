@@ -297,6 +297,7 @@
 .marquee {
   position: absolute;
   right: -800px;
+  top: -370px;
   left: 0;
   overflow: hidden;
 }
