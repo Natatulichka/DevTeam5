@@ -1,25 +1,31 @@
-.section.hero-section {
+.hero-section {
   padding: 0;
   min-width: 320px;
   max-width: 1440px;
   height: 812px;
+  background-image: url(../img/hero/bg-hero-mobile-1.png), var(--theme-gradient);
+  background-repeat: no-repeat;
+  background-position-x: -268px, 0;
+  background-size: 578px 812px;
 }
-/* red-theme */
-.section.hero-section.theme-red {
-  background: url(../img/hero/hero-mobile@1x.png) no-repeat;
-}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .section.hero-section.theme-red {
-    background: url(../img/hero/hero-mobile@2x.png) no-repeat;
-    background-size: 310px 812px;
+  .hero-section {
+    background: url(../img/hero/bg-hero-mobile-2.png), var(--theme-gradient);
+    background-repeat: no-repeat;
+    background-position-x: -268px, 0;
+    background-size: 578px 812px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .section.hero-section.theme-red {
-    background: url(../img/hero/hero-tablet@1x.png) no-repeat;
+  .hero-section {
+    background: url(../img/hero/bg-hero-tablet-1.png), var(--theme-gradient);
+    background-repeat: no-repeat;
+    background-position-x: -147px, 0;
+    background-size: 768px 1024px, 768px 1024px;
     height: 1024px;
   }
 }
@@ -27,72 +33,33 @@
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-width: 768px) and (min-resolution: 192dpi),
   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .section.hero-section.theme-red {
-    background: url(../img/hero/hero-tablet@2x.png) no-repeat;
-    background-size: 581px 1024px;
+  .hero-section {
+    background: url(../img/hero/bg-hero-tablet-2.png), var(--theme-gradient);
+    background-repeat: no-repeat;
+    background-position-x: -147px, 0;
+    background-size: 768px 1024px, 768px 1024px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .section.hero-section.theme-red {
-    background: url(../img/hero/hero-desktop@1x.png) no-repeat;
+  .hero-section {
+    background: url(../img/hero/bg-hero-desktop-1.png), var(--theme-gradient);
+    background-repeat: no-repeat;
+    background-size: 728px 900px, 1440px 900px;
     height: 900px;
   }
 }
-
 @media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-width: 1440px) and (min-resolution: 192dpi),
   only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .section.hero-section.theme-red {
-    background: url(../img/hero/hero-desktop@2x.png) no-repeat;
-    background-size: 728px 900px;
-  }
-}
-/* blue-theme */
-.section.hero-section.theme-blue {
-  background: url(../img/hero/blue-theme/mobile_hero_blue@1x.png) no-repeat;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .section.hero-section.theme-blue {
-    background: url(../img/hero/blue-theme/mobile_hero_blue@2x.png) no-repeat;
-    background-size: 310px 812px;
+  .hero-section {
+    background: url(../img/hero/bg-hero-desktop-2.png), var(--theme-gradient);
+    background-repeat: no-repeat;
+    background-position-x: 0px, 0px;
+    background-size: 728px 900px, 1440px 900px;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .section.hero-section.theme-blue {
-    background: url(../img/hero/blue-theme/tablet_hero_blue@1x.png) no-repeat;
-    height: 1024px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-width: 768px) and (min-resolution: 192dpi),
-  only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .section.hero-section.theme-blue {
-    background: url(../img/hero/blue-theme/tablet_hero_blue@2x.png) no-repeat;
-    background-size: 581px 1024px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .section.hero-section.theme-blue {
-    background: url(../img/hero/blue-theme/desktop_hero_blue@1x.png) no-repeat;
-    height: 900px;
-  }
-}
-
-@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-width: 1440px) and (min-resolution: 192dpi),
-  only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .section.hero-section.theme-blue {
-    background: url(../img/hero/blue-theme/desktop_hero_blue@2x.png) no-repeat;
-    background-size: 728px 900px;
-  }
-}
-/*  */
 .container.hero-container {
   min-width: 320px;
   max-width: 1440px;

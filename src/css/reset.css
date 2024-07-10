@@ -36,14 +36,32 @@ img {
   --bg-color: #1c1d20;
   --transition-duration: 0.25s;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --theme-gradient: linear-gradient(
+    270deg,
+    #1c1d20 49.68%,
+    #69292d 67.73%,
+    #ed3b44 100%
+  );
 }
 .theme-blue {
   --primary-color: #0041e8;
   --primary-hover-color: #265de9;
+  --theme-gradient: linear-gradient(
+    270deg,
+    #1c1d20 49.68%,
+    #001958 67.73%,
+    #0041e8 100%
+  );
 }
 .theme-red {
   --primary-color: #ed3b44;
   --primary-hover-color: #e0373f;
+  --theme-gradient: linear-gradient(
+    270deg,
+    #1c1d20 49.68%,
+    #69292d 67.73%,
+    #ed3b44 100%
+  );
 }
 body {
   font-family: 'Inter Tight', sans-serif;
