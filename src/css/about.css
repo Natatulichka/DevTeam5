@@ -180,6 +180,7 @@
   width: 28px;
   height: 28px;
   stroke: #3b3b3b;
+  fill: none;
 }
 
 .about .swiper-button-next:hover > .arrow-swiper-about {
