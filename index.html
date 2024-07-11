@@ -21,7 +21,7 @@
     <script type="module" crossorigin src="/DevTeam5/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/DevTeam5/assets/vendor-445a0bd3.js">
     <link rel="stylesheet" href="/DevTeam5/assets/vendor-60200598.css">
-    <link rel="stylesheet" href="/DevTeam5/assets/index-aaef4950.css">
+    <link rel="stylesheet" href="/DevTeam5/assets/index-8b5e5937.css">
   </head>
 
   <body>
@@ -390,14 +390,14 @@
     <div class="project-wrapper">
       <div class="static part">
         <div class="project-dscr-list">
-          <ul class="project-achive">
-            <li>
+          <div class="project-achive">
+            <div>
               <p class="achive">#react</p>
-            </li>
-            <li><p class="achive">#js</p></li>
-            <li><p class="achive">#node.js</p></li>
-            <li><p class="achive">#git.js</p></li>
-          </ul>
+            </div>
+            <div><p class="achive">#js</p></div>
+            <div><p class="achive">#node.js</p></div>
+            <div><p class="achive">#git.js</p></div>
+          </div>
           <h3 class="project-text">
             Programming Across Borders: Ideas, Technologies, Innovations
           </h3>
@@ -414,10 +414,10 @@
       <div class="swiper-container">
         <div class="part swiper project-swiper">
           <!-- Additional required wrapper     -->
-          <ul class="swiper-wrapper project-swiper-wrapper">
+          <div class="swiper-wrapper project-swiper-wrapper">
             <!-- Slides -->
-            <li class="swiper-slide project-swiper-slide">
-              <div class="project-picture">
+            <div class="swiper-slide project-swiper-slide" role="group">
+              <div class="project-picture" aria-label="1/3">
                 <picture class="project-list-item-img">
                   <source
                     srcset="/DevTeam5/assets/image_1_mobile_1x-1502d1f8.webp 1x, /DevTeam5/assets/image_1_mobile_2x-0e72cfae.webp 2x"
@@ -439,9 +439,9 @@
                   />
                 </picture>
               </div>
-            </li>
-            <li class="swiper-slide project-swiper-slide">
-              <div class="project-picture">
+            </div>
+            <div class="swiper-slide project-swiper-slide" role="group">
+              <div class="project-picture" aria-label="2/3">
                 <picture class="project-list-item-img">
                   <source
                     srcset="/DevTeam5/assets/image_2_mobile_1x-583f3bc5.webp 1x, /DevTeam5/assets/image_2_mobile_2x-595e384b.webp 2x"
@@ -463,9 +463,9 @@
                   />
                 </picture>
               </div>
-            </li>
-            <li class="swiper-slide project-swiper-slide">
-              <div class="project-picture">
+            </div>
+            <div class="swiper-slide project-swiper-slide" role="group">
+              <div class="project-picture" aria-label="3/3">
                 <picture class="project-list-item-img">
                   <source
                     srcset="/DevTeam5/assets/image_3_mobile_1x-bffbe5ee.webp 1x, /DevTeam5/assets/image_3_mobile_2x-e9e18aee.webp 2x"
@@ -487,16 +487,16 @@
                   />
                 </picture>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
           <!-- If we need navigation buttons -->
           <div class="navigation-buttons-project">
-            <div class="swiper-button-prev-project">
+            <div class="swiper-button-prev-project" role="button">
               <svg class="arrow-project">
                 <use xlink:href="/DevTeam5/assets/sprite-8d1c536a.svg#icon-arrow-swiper-1"></use>
               </svg>
             </div>
-            <div class="swiper-button-next-project">
+            <div class="swiper-button-next-project" role="button">
               <svg class="arrow-project">
                 <use xlink:href="/DevTeam5/assets/sprite-8d1c536a.svg#icon-arrow-swiper-1"></use>
               </svg>
