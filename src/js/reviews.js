@@ -1,7 +1,7 @@
 import { fetchReviews } from './api-docs';
 import { renderReviews } from './render-reviews';
 import iziToast from 'izitoast';
-import imageUrlError from 'img/sprite.svg#error';
+import imageUrlError from '../img/sprite.svg#error';
 import refs from './refs';
 import { disableLoader, enableLoader } from './loader';
 
