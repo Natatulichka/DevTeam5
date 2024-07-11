@@ -115,7 +115,7 @@
 /* Стилі для десктопів (1440px і вище) */
 @media screen and (min-width: 1440px) {
   .section.faq {
-    padding-bottom: 164px;
+    padding-bottom: 96px;
   }
   .faq-accordion {
     display: grid;
