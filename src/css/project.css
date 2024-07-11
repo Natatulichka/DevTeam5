@@ -107,6 +107,7 @@
 .arrow-project {
   width: 52px;
   height: 52px;
+  transform: rotate(90deg);
   fill: var(--bg-color);
   stroke: #fafafa;
   transition: stroke var(--transition-duration)
