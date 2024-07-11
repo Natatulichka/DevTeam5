@@ -1,5 +1,5 @@
 import iziToast from 'izitoast';
-import imageUrlError from '../img/footer/icon-error.svg';
+import imageUrlError from 'img/sprite.svg#error';
 import refs from './refs';
 import axios from 'axios';
 import { loadFromLS, saveToLS } from './local-storage-functions';
