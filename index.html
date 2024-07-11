@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="icon"
+      href="/DevTeam5/assets/favicon-3f0234b4.svg"
+      type="image/svg+xml"
+      sizes="48x48"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/DevTeam5/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/DevTeam5/assets/vendor-445a0bd3.js">
+    <link rel="stylesheet" href="/DevTeam5/assets/vendor-60200598.css">
+    <link rel="stylesheet" href="/DevTeam5/assets/index-b512f6d0.css">
+  </head>
+
+  <body>
+    <header id="header">
+  <div class="container header-container">
+    <div class="wrapper">
+      <div class="logo">
+        <img class="header-logo-img" width="80" height="80"
+          srcset="data:image/webp;base64,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 1x, /DevTeam5/assets/jeff-2x-23377154.webp 2x" src="data:image/webp;base64,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"
+          alt="Photo Jefferson" />
+        <a class="logo-link" href="./index.html">
+          <svg class="header-logo-jeff">
+            <use href="/DevTeam5/assets/sprite-c58e01fb.svg#logo-jefferson"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="header-menu">
+        <button type="button" class="header-menu-btn">Menu</button>
+        <ul class="header-menu-list is-hidden">
+          <li class="header-menu-item"><a href="#about">About me</a></li>
+          <li class="header-menu-item"><a href="#benefits">Benefits</a></li>
+          <li class="header-menu-item"><a href="#project">Projects</a></li>
+          <li class="header-menu-item"><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="header-right-side">
+        <a class="order-link hidden" href="#footer">Order the project</a>
+        <!-- Togle -->
+        <div class="toggle-container hidden">
+          <p class="toggle-text">Color Theme:</p>
+          <input type="checkbox" id="theme-toggle" />
+          <label for="theme-toggle" class="toggle-label"></label>
+        </div>
+      </div>
+      <button class="header-burger-btn" type="button">
+        <svg class="header-burger-btn-icon" width="28" height="28">
+          <use href="/DevTeam5/assets/sprite-c58e01fb.svg#burger-btn-icon"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="header-pop-up-menu">
+    <button class="pop-up-close-btn" type="button">
+      <svg class="pop-up-close-btn-icon">
+        <use href="/DevTeam5/assets/sprite-c58e01fb.svg#header-close-btn-icon" width="28" height="28"></use>
+      </svg>
+    </button>
+    <div class="pop-up-content">
+      <ul class="pop-up-list">
+        <li class="pop-up-list-item"><a href="#about">About me</a></li>
+        <li class="pop-up-list-item"><a href="#benefits">Benefits</a></li>
+        <li class="pop-up-list-item"><a href="#project">Projects</a></li>
+        <li class="pop-up-list-item"><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="pop-up-btn-div">
+        <a class="pop-up-order-link" href="#footer">Order the project</a>
+      </div>
+    </div>
+  </div>
+</header>
+    <main>
+      <section class="section hero-section" id="hero-section">
+  <div class="container hero-container">
+    <h1 class="hero-title">
+      <span class="hero-title-fix fix-1">Hello.</span>
+      <span class="hero-title-fix fix-2">I’m Fullstack</span>
+      <span class="hero-title-fix fix-3">developer</span>
+      <span class="hero-title-fix fix-4">Lloyd</span>
+      <span class="hero-title-fix fix-5">Jefferson.</span>
+    </h1>
+    <nav class="hero-contacts-box">
+      <ul class="hero-contacts-list">
+        <li class="hero-contact-item">
+          <a
+            class="hero-contact-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >IG</a
+          >
+        </li>
+        <li class="hero-contact-item">
+          <a
+            class="hero-contact-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >FB</a
+          >
+        </li>
+        <li class="hero-contact-item">
+          <a
+            class="hero-contact-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >YT</a
+          >
+        </li>
+        <li class="hero-contact-item">
+          <a
+            class="hero-contact-link"
+            href="https://github.com/Natatulichka/DevTeam5"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GH</a
+          >
+        </li>
+        <li class="hero-contact-item hero-mail">
+          <a
+            class="hero-contact-link"
+            href="mailto:lloydjefferson@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+      <section class="section about" id="about">
+  <div class="container">
+    <!-- Hidden TITLE -->
+    <h2 class="visually-hidden">about me</h2>
+
+    <!-- My slogan and avatar -->
+    <div class="slogan-avatar">
+      <h3 class="about-slogan">
+        I work with people all over the world to create impressive and
+        <span class="slogan-red">functional</span>
+        <span class="slogan-grey">websites</span> that reflect each client's
+        unique personality.
+      </h3>
+      <picture>
+        <source
+          srcset="/DevTeam5/assets/mobile@1x-56e15276.webp 1x, /DevTeam5/assets/mobile@2x-081faaaf.webp 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="/DevTeam5/assets/tablet@1x-b00c3754.webp 1x, /DevTeam5/assets/tablet@2x-0105f152.webp 2x"
+          media="(max-width: 1439px)"
+        />
+        <source
+          srcset="/DevTeam5/assets/desktop@1x-da35226f.webp 1x, /DevTeam5/assets/desktop@2x-4ef1926a.webp 2x"
+          media="(min-width: 1440px)"
+        />
+        <img
+          src="/DevTeam5/assets/mobile@1x-56e15276.webp"
+          alt="My photo"
+          width="343"
+          height="500"
+          class="about-avatar"
+        />
+      </picture>
+    </div>
+
+    <!--Information about me -->
+    <ul class="about-descr-list accordion-container">
+      <li class="about-descr ac">
+        <button type="button" class="ac-trigger about-descr-title">
+          <span> about me </span>
+          <span class="arrow-accordion-about-wrapper">
+            <svg class="arrow-accordion-about">
+              <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-up"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="about-descr-info ac-panel">
+          <div class="ac-text">
+            <p class="about-descr-text about-me-text">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages ​​and technologies, always ready
+              to improve my skills. I always follow the latest trends and look
+              for unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+            <p class="about-descr-text about-me-text">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work. I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="about-descr ac">
+        <button type="button" class="ac-trigger about-descr-title">
+          <span>role</span>
+          <span class="arrow-accordion-about-wrapper">
+            <svg class="arrow-accordion-about">
+              <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-up"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="about-descr-info ac-panel">
+          <div class="ac-text">
+            <p class="about-descr-text about-role-text">Frontend development</p>
+            <p class="about-descr-text about-role-text">
+              HeadlessCMS,Wordpress
+            </p>
+            <p class="about-descr-text about-role-text">Blender(enjoy)</p>
+          </div>
+        </div>
+      </li>
+      <li class="about-descr ac">
+        <button type="button" class="ac-trigger about-descr-title">
+          <span> education </span>
+          <span class="arrow-accordion-about-wrapper">
+            <svg class="arrow-accordion-about">
+              <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-up"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="about-descr-info ac-panel">
+          <div class="ac-text">
+            <p class="about-descr-text about-edu-text">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </p>
+            <p class="about-descr-text about-edu-text">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </p>
+            <p class="about-descr-text about-edu-text">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- My skills + swiper-->
+    <div class="about-swiper-container">
+      <div class="about-tecs swiper">
+        <ul class="about-tecs-list swiper-wrapper">
+          <li class="swiper-slide">
+            <p class="about-tecs-title">HTML/CSS</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">JavaScript</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">React</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">Node.js</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">React Native</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">Soft skills</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">HTML/CSS</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">JavaScript</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">React</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">Node.js</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">React Native</p>
+          </li>
+          <li class="swiper-slide">
+            <p class="about-tecs-title">Soft skills</p>
+          </li>
+        </ul>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-next">
+          <svg class="arrow-swiper-about">
+            <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container benefits-container" id="benefits">
+    <h2 class="title-benefits">Benefits of working with me</h2>
+    <div class="benefits-content">
+      <ul class="benefits-list">
+        <li class="benefits-items">
+          <div class="svg-div">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-user"></use>
+            </svg>
+          </div>
+          <div class="benefits-info">
+            <h3 class="benefits-subtitle">Expertise</h3>
+            <p class="benefits-text">
+              As a highly experienced developer, I have deep knowledge of
+              programming and website development.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-items">
+          <div class="svg-div">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-message"></use>
+            </svg>
+          </div>
+          <div class="benefits-info">
+            <h3 class="benefits-subtitle">Communication</h3>
+            <p class="benefits-text">
+              Understanding your needs and wants is my priority and I am always
+              open to discussions and corrections.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-items">
+          <div class="svg-div">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-brush"></use>
+            </svg>
+          </div>
+          <div class="benefits-info">
+            <h3 class="benefits-subtitle">Art</h3>
+            <p class="benefits-text">
+              Thanks to my creative nature, I am ready to accept challenges and
+              help you bring your ideas to life.
+            </p>
+          </div>
+        </li>
+        <li class="benefits-items">
+          <div class="svg-div">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+          <div class="benefits-info">
+            <h3 class="benefits-subtitle">Urgent execution...</h3>
+            <p class="benefits-text">
+              I understand how important time is to you. Ready to work quickly
+              and efficiently, without reducing the quality of work.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <a href="#footer" class="benefits-btn">Order the project</a>
+    </div>
+  </div>
+</section>
+
+      <section class="section project" id="project">
+  <div class="container project-container">
+    <h6 class="project-title">PROJECTS</h6>
+
+    <div class="project-wrapper">
+      <div class="static part">
+        <div class="project-dscr-list">
+          <ul class="project-achive">
+            <li>
+              <p class="achive">#react</p>
+            </li>
+            <li><p class="achive">#js</p></li>
+            <li><p class="achive">#node.js</p></li>
+            <li><p class="achive">#git.js</p></li>
+          </ul>
+          <h2 class="project-text">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </h2>
+          <a
+            class="see-project"
+            href="https://github.com/Natatulichka/DevTeam5"
+            target="_blank"
+            >See project</a
+          >
+        </div>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <div class="part swiper project-swiper">
+          <!-- Additional required wrapper -->
+          <ul class="swiper-wrapper project-swiper-wrapper">
+            <!-- Slides -->
+            <li class="swiper-slide project-swiper-slide">
+              <div class="project-picture">
+                <picture class="project-list-item-img">
+                  <source
+                    srcset="/DevTeam5/assets/image_1_mobile_1x-1502d1f8.webp 1x, /DevTeam5/assets/image_1_mobile_2x-0e72cfae.webp 2x"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="/DevTeam5/assets/image_1_tablet_1x-5da3b08a.webp 1x, /DevTeam5/assets/image_1_tablet_2x-b4388c49.webp 2x"
+                    media="(min-width: 768px) and (max-width: 1439px)"
+                  />
+                  <source
+                    srcset="/DevTeam5/assets/image_1_tablet_1x-5da3b08a.webp 1x, /DevTeam5/assets/image_1_tablet_2x-b4388c49.webp 2x"
+                    media="(min-width:1440px)"
+                  />
+                  <img
+                    src="/DevTeam5/assets/image_1_tablet_1x-5da3b08a.webp"
+                    alt="project image 1"
+                    width="614"
+                    height="385"
+                  />
+                </picture>
+              </div>
+            </li>
+            <li class="swiper-slide project-swiper-slide">
+              <div class="project-picture">
+                <picture class="project-list-item-img">
+                  <source
+                    srcset="/DevTeam5/assets/image_2_mobile_1x-583f3bc5.webp 1x, /DevTeam5/assets/image_2_mobile_2x-595e384b.webp 2x"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="/DevTeam5/assets/image_2_tablet_1x-fbe65d8e.webp 1x, /DevTeam5/assets/image_2_tablet_2x-99522c37.webp 2x"
+                    media="(min-width: 768px) and (max-width: 1439px)"
+                  />
+                  <source
+                    srcset="/DevTeam5/assets/image_2_tablet_1x-fbe65d8e.webp 1x, /DevTeam5/assets/image_2_tablet_2x-99522c37.webp 2x"
+                    media="(min-width:1440px)"
+                  />
+                  <img
+                    src="/DevTeam5/assets/image_2_tablet_1x-fbe65d8e.webp"
+                    alt="project image 2"
+                    width="614"
+                    height="385"
+                  />
+                </picture>
+              </div>
+            </li>
+            <li class="swiper-slide project-swiper-slide">
+              <div class="project-picture">
+                <picture class="project-list-item-img">
+                  <source
+                    srcset="/DevTeam5/assets/image_3_mobile_1x-bffbe5ee.webp 1x, /DevTeam5/assets/image_3_mobile_2x-e9e18aee.webp 2x"
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="/DevTeam5/assets/image_3_tablet_1x-e068bc78.webp 1x, /DevTeam5/assets/image_3_tablet_2x-72ce2634.webp 2x"
+                    media="(min-width: 768px) and (max-width: 1439px)"
+                  />
+                  <source
+                    srcset="/DevTeam5/assets/image_3_tablet_1x-e068bc78.webp 1x, /DevTeam5/assets/image_3_tablet_2x-72ce2634.webp 2x"
+                    media="(min-width:1440px)"
+                  />
+                  <img
+                    src="/DevTeam5/assets/image_3_tablet_1x-e068bc78.webp"
+                    alt="project image 3"
+                    width="614"
+                    height="385"
+                  />
+                </picture>
+              </div>
+            </li>
+          </ul>
+          <!-- If we need navigation buttons -->
+          <div class="navigation-buttons-project">
+            <div class="swiper-button-prev-project">
+              <svg class="arrow-project">
+                <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-arrow-swiper-1"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next-project">
+              <svg class="arrow-project">
+                <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-arrow-swiper-1"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="project-btn-prev swiper-button-prev"></div>
+          <div class="project-btn-next swiper-button-next"></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq" id="faq">
+    <div class="container">
+        <h2 class="faq-title">FAQ</h2>
+        <ul class="faq-accordion" id="faq-accordion">
+            <li class="faq-accordion-item">
+                <div class="question-wrapper">
+                    <h3 class="question-title">What programming languages are most often used in your project?</h3>
+                    <button class="faq-arrow-button" type="button">
+                        <svg class="icon-faq" width="20" height="20">
+                            <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-accordion-panel">
+                    <p class="answer-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+                </div>
+            </li>
+            <li class="faq-accordion-item">
+                <div class="question-wrapper">
+                    <h3 class="question-title">What are the deadlines for the project?</h3>
+                    <button class="faq-arrow-button" type="button">
+                        <svg class="icon-faq" width="20" height="20">
+                            <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-accordion-panel">
+                    <p class="answer-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+                </div>
+            </li>
+            <li class="faq-accordion-item">
+                <div class="question-wrapper">
+                    <h3 class="question-title">What payment methods do you accept?</h3>
+                    <button class="faq-arrow-button" type="button">
+                        <svg class="icon-faq" width="20" height="20">
+                            <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-accordion-panel">
+                    <p class="answer-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+                </div>
+            </li>
+            <li class="faq-accordion-item">
+                <div class="question-wrapper">
+                    <h3 class="question-title">How can I contact you?</h3>
+                    <button class="faq-arrow-button" type="button">
+                        <svg class="icon-faq" width="20" height="20">
+                            <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-accordion-panel">
+                    <p class="answer-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+                </div>
+            </li>
+            <li class="faq-accordion-item">
+                <div class="question-wrapper">
+                    <h3 class="question-title">Do you provide advice or support?</h3>
+                    <button class="faq-arrow-button" type="button">
+                        <svg class="icon-faq" width="20" height="20">
+                            <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-accordion-panel">
+                    <p class="answer-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+                </div>
+            </li>
+            <li class="faq-accordion-item">
+                <div class="question-wrapper">
+                    <h3 class="question-title">What does the process of developing a software product look like from idea to implementation?</h3>
+                    <button class="faq-arrow-button" type="button">
+                        <svg class="icon-faq" width="20" height="20">
+                            <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-accordion-panel">
+                    <p class="answer-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section> 
+
+      <section class="section section-cover">
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+  <div class="circle circle3"></div>
+  <h2 class="visually-hidden">Covers</h2>
+  <div class="container covers-container">
+    <div class="content">
+      <div class="marquee">
+        <ul class="marquee-inner">
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-12-1x-fe4f2a01.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-12@2x-18979e01.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg 1x, /DevTeam5/assets/mob-rectangle-12@2x-b0411d7c.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-12-1x.jpg 1x, ./img/covers/covers-origin/rectangle-12-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg"
+                alt="Enjoy Learning English with English Excellence"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-11-1x-2833a6bb.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-11@2x-70aebb63.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg 1x, /DevTeam5/assets/mob-rectangle-11@2x-ce7367cd.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-11-1x.jpg 1x, ./img/covers/covers-origin/rectangle-11-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg"
+                alt="Manage your Finances Masterfully - Join Over 1000 Users Today!"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-1х-424dd728.jpg 1x, /DevTeam5/assets/desc-tab-rectangle@2х-4f69a512.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg 1x, /DevTeam5/assets/mob-rectangle@2х-ac1ead06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-1х.jpg 1x, ./img/covers/covers-origin/rectangle-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg"
+                alt="Get body in shape, stay healthy"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-5-1х-be5a45d4.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-5@2х-5cf9e8ef.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg 1x, /DevTeam5/assets/mob-rectangle-5@2х-2d845a9f.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-5-1х.jpg 1x, ./img/covers/covers-origin/rectangle-5-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg"
+                alt="Fresh harvest box"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-6-1x-88ef05ef.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-6@2x-055f6190.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg 1x, /DevTeam5/assets/mob-rectangle-6@2x-25b499d1.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-6-1x.jpg 1x, ./img/covers/covers-origin/rectangle-6-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg"
+                alt="A brand that is inspired by forms creates by nature"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-first-screen-1х-f746dea8.jpg 1x, /DevTeam5/assets/desc-tab-first-screen@2х-625e7572.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg 1x, /DevTeam5/assets/mob-first-screen@2х-34168e92.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/first-screen-1х.jpg 1x, ./img/covers/covers-origin/first-screen-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg"
+                alt="Upgrade Your Business with StarlightStudio"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-7-1x-79e05980.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-7@2x-1bed66f2.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg 1x, /DevTeam5/assets/mob-rectangle-7@2x-eedc6fac.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-7-1x.jpg 1x, ./img/covers/covers-origin/rectangle-7-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg"
+                alt="Mimino"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-8-1x-ea35b4db.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-8@2x-25235e07.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg 1x, /DevTeam5/assets/mob-rectangle-8@2x-5762bb06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-8-1x.jpg 1x, ./img/covers/covers-origin/rectangle-8-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg"
+                alt="Reviving the traditional Ukrainan artistry"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-9-1x-5608ce4a.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-9@2x-0247ac85.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg 1x, /DevTeam5/assets/mob-rectangle-9@2x-533e0bdf.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-9-1x.jpg 1x, ./img/covers/covers-origin/rectangle-9-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg"
+                alt="Organic vegetables "
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-10-1x-63ff8a72.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-10@2x-eaa58a47.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg 1x, /DevTeam5/assets/mob-rectangle-10@2x-07182058.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-10-1x.jpg 1x, ./img/covers/covers-origin/rectangle-10-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg"
+                alt="Transforming your body shape with Power Pulse"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <ul class="marquee-inner">
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-6-1x-88ef05ef.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-6@2x-055f6190.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg 1x, /DevTeam5/assets/mob-rectangle-6@2x-25b499d1.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-6-1x.jpg 1x, ./img/covers/covers-origin/rectangle-6-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg"
+                alt="A brand that is inspired by forms creates by nature"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-8-1x-ea35b4db.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-8@2x-25235e07.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg 1x, /DevTeam5/assets/mob-rectangle-8@2x-5762bb06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-8-1x.jpg 1x, ./img/covers/covers-origin/rectangle-8-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg"
+                alt="Reviving the traditional Ukrainan artistry"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-first-screen-1х-f746dea8.jpg 1x, /DevTeam5/assets/desc-tab-first-screen@2х-625e7572.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg 1x, /DevTeam5/assets/mob-first-screen@2х-34168e92.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/first-screen-1х.jpg 1x, ./img/covers/covers-origin/first-screen-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg"
+                alt="Upgrade Your Business with StarlightStudio"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-5-1х-be5a45d4.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-5@2х-5cf9e8ef.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg 1x, /DevTeam5/assets/mob-rectangle-5@2х-2d845a9f.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-5-1х.jpg 1x, ./img/covers/covers-origin/rectangle-5-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg"
+                alt="Fresh harvest box"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-10-1x-63ff8a72.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-10@2x-eaa58a47.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg 1x, /DevTeam5/assets/mob-rectangle-10@2x-07182058.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-10-1x.jpg 1x, ./img/covers/covers-origin/rectangle-10-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg"
+                alt="Transforming your body shape with Power Pulse"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-11-1x-2833a6bb.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-11@2x-70aebb63.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg 1x, /DevTeam5/assets/mob-rectangle-11@2x-ce7367cd.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-11-1x.jpg 1x, ./img/covers/covers-origin/rectangle-11-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg"
+                alt="Manage your Finances Masterfully - Join Over 1000 Users Today!"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-12-1x-fe4f2a01.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-12@2x-18979e01.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg 1x, /DevTeam5/assets/mob-rectangle-12@2x-b0411d7c.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-12-1x.jpg 1x, ./img/covers/covers-origin/rectangle-12-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg"
+                alt="Enjoy Learning English with English Excellence"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-1х-424dd728.jpg 1x, /DevTeam5/assets/desc-tab-rectangle@2х-4f69a512.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg 1x, /DevTeam5/assets/mob-rectangle@2х-ac1ead06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-1х.jpg 1x, ./img/covers/covers-origin/rectangle-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg"
+                alt="Get body in shape, stay healthy"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-7-1x-79e05980.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-7@2x-1bed66f2.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg 1x, /DevTeam5/assets/mob-rectangle-7@2x-eedc6fac.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-7-1x.jpg 1x, ./img/covers/covers-origin/rectangle-7-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg"
+                alt="Mimino"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-9-1x-5608ce4a.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-9@2x-0247ac85.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg 1x, /DevTeam5/assets/mob-rectangle-9@2x-533e0bdf.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-9-1x.jpg 1x, ./img/covers/covers-origin/rectangle-9-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg"
+                alt="Organic vegetables "
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <ul class="marquee-inner">
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-12-1x-fe4f2a01.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-12@2x-18979e01.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg 1x, /DevTeam5/assets/mob-rectangle-12@2x-b0411d7c.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-12-1x.jpg 1x, ./img/covers/covers-origin/rectangle-12-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg"
+                alt="Enjoy Learning English with English Excellence"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-11-1x-2833a6bb.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-11@2x-70aebb63.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg 1x, /DevTeam5/assets/mob-rectangle-11@2x-ce7367cd.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-11-1x.jpg 1x, ./img/covers/covers-origin/rectangle-11-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg"
+                alt="Manage your Finances Masterfully - Join Over 1000 Users Today!"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-1х-424dd728.jpg 1x, /DevTeam5/assets/desc-tab-rectangle@2х-4f69a512.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg 1x, /DevTeam5/assets/mob-rectangle@2х-ac1ead06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-1х.jpg 1x, ./img/covers/covers-origin/rectangle-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg"
+                alt="Get body in shape, stay healthy"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-6-1x-88ef05ef.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-6@2x-055f6190.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg 1x, /DevTeam5/assets/mob-rectangle-6@2x-25b499d1.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-6-1x.jpg 1x, ./img/covers/covers-origin/rectangle-6-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg"
+                alt="A brand that is inspired by forms creates by nature"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-7-1x-79e05980.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-7@2x-1bed66f2.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg 1x, /DevTeam5/assets/mob-rectangle-7@2x-eedc6fac.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-7-1x.jpg 1x, ./img/covers/covers-origin/rectangle-7-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg"
+                alt="Mimino"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-first-screen-1х-f746dea8.jpg 1x, /DevTeam5/assets/desc-tab-first-screen@2х-625e7572.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg 1x, /DevTeam5/assets/mob-first-screen@2х-34168e92.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/first-screen-1х.jpg 1x, ./img/covers/covers-origin/first-screen-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg"
+                alt="Upgrade Your Business with StarlightStudio"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-8-1x-ea35b4db.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-8@2x-25235e07.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg 1x, /DevTeam5/assets/mob-rectangle-8@2x-5762bb06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-8-1x.jpg 1x, ./img/covers/covers-origin/rectangle-8-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg"
+                alt="Reviving the traditional Ukrainan artistry"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-9-1x-5608ce4a.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-9@2x-0247ac85.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg 1x, /DevTeam5/assets/mob-rectangle-9@2x-533e0bdf.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-9-1x.jpg 1x, ./img/covers/covers-origin/rectangle-9-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg"
+                alt="Organic vegetables "
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-10-1x-63ff8a72.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-10@2x-eaa58a47.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg 1x, /DevTeam5/assets/mob-rectangle-10@2x-07182058.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-10-1x.jpg 1x, ./img/covers/covers-origin/rectangle-10-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg"
+                alt="Transforming your body shape with Power Pulse"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-5-1х-be5a45d4.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-5@2х-5cf9e8ef.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg 1x, /DevTeam5/assets/mob-rectangle-5@2х-2d845a9f.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-5-1х.jpg 1x, ./img/covers/covers-origin/rectangle-5-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg"
+                alt="Fresh harvest box"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <ul class="marquee-inner">
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-11-1x-2833a6bb.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-11@2x-70aebb63.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg 1x, /DevTeam5/assets/mob-rectangle-11@2x-ce7367cd.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-11-1x.jpg 1x, ./img/covers/covers-origin/rectangle-11-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg"
+                alt="Manage your Finances Masterfully - Join Over 1000 Users Today!"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-first-screen-1х-f746dea8.jpg 1x, /DevTeam5/assets/desc-tab-first-screen@2х-625e7572.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg 1x, /DevTeam5/assets/mob-first-screen@2х-34168e92.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/first-screen-1х.jpg 1x, ./img/covers/covers-origin/first-screen-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg"
+                alt="Upgrade Your Business with StarlightStudio"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-1х-424dd728.jpg 1x, /DevTeam5/assets/desc-tab-rectangle@2х-4f69a512.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg 1x, /DevTeam5/assets/mob-rectangle@2х-ac1ead06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-1х.jpg 1x, ./img/covers/covers-origin/rectangle-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg"
+                alt="Get body in shape, stay healthy"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-10-1x-63ff8a72.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-10@2x-eaa58a47.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg 1x, /DevTeam5/assets/mob-rectangle-10@2x-07182058.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-10-1x.jpg 1x, ./img/covers/covers-origin/rectangle-10-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg"
+                alt="Transforming your body shape with Power Pulse"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-5-1х-be5a45d4.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-5@2х-5cf9e8ef.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg 1x, /DevTeam5/assets/mob-rectangle-5@2х-2d845a9f.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-5-1х.jpg 1x, ./img/covers/covers-origin/rectangle-5-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg"
+                alt="Fresh harvest box"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-6-1x-88ef05ef.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-6@2x-055f6190.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg 1x, /DevTeam5/assets/mob-rectangle-6@2x-25b499d1.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-6-1x.jpg 1x, ./img/covers/covers-origin/rectangle-6-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg"
+                alt="A brand that is inspired by forms creates by nature"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-12-1x-fe4f2a01.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-12@2x-18979e01.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg 1x, /DevTeam5/assets/mob-rectangle-12@2x-b0411d7c.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-12-1x.jpg 1x, ./img/covers/covers-origin/rectangle-12-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg"
+                alt="Enjoy Learning English with English Excellence"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-7-1x-79e05980.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-7@2x-1bed66f2.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg 1x, /DevTeam5/assets/mob-rectangle-7@2x-eedc6fac.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-7-1x.jpg 1x, ./img/covers/covers-origin/rectangle-7-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg"
+                alt="Mimino"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-9-1x-5608ce4a.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-9@2x-0247ac85.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg 1x, /DevTeam5/assets/mob-rectangle-9@2x-533e0bdf.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-9-1x.jpg 1x, ./img/covers/covers-origin/rectangle-9-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg"
+                alt="Organic vegetables "
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-8-1x-ea35b4db.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-8@2x-25235e07.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg 1x, /DevTeam5/assets/mob-rectangle-8@2x-5762bb06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-8-1x.jpg 1x, ./img/covers/covers-origin/rectangle-8-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg"
+                alt="Reviving the traditional Ukrainan artistry"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+        </ul>
+        <ul class="marquee-inner">
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-12-1x-fe4f2a01.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-12@2x-18979e01.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg 1x, /DevTeam5/assets/mob-rectangle-12@2x-b0411d7c.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-12-1x.jpg 1x, ./img/covers/covers-origin/rectangle-12-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-12-1x-560f02d3.jpg"
+                alt="Enjoy Learning English with English Excellence"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-11-1x-2833a6bb.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-11@2x-70aebb63.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg 1x, /DevTeam5/assets/mob-rectangle-11@2x-ce7367cd.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-11-1x.jpg 1x, ./img/covers/covers-origin/rectangle-11-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-11-1x-82ccbb2c.jpg"
+                alt="Manage your Finances Masterfully - Join Over 1000 Users Today!"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-1х-424dd728.jpg 1x, /DevTeam5/assets/desc-tab-rectangle@2х-4f69a512.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg 1x, /DevTeam5/assets/mob-rectangle@2х-ac1ead06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-1х.jpg 1x, ./img/covers/covers-origin/rectangle-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-1х-a4b515bb.jpg"
+                alt="Get body in shape, stay healthy"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-5-1х-be5a45d4.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-5@2х-5cf9e8ef.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg 1x, /DevTeam5/assets/mob-rectangle-5@2х-2d845a9f.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-5-1х.jpg 1x, ./img/covers/covers-origin/rectangle-5-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-5-1х-d1b5a05f.jpg"
+                alt="Fresh harvest box"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-6-1x-88ef05ef.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-6@2x-055f6190.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg 1x, /DevTeam5/assets/mob-rectangle-6@2x-25b499d1.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-6-1x.jpg 1x, ./img/covers/covers-origin/rectangle-6-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-6-1x-fcda685f.jpg"
+                alt="A brand that is inspired by forms creates by nature"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-first-screen-1х-f746dea8.jpg 1x, /DevTeam5/assets/desc-tab-first-screen@2х-625e7572.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg 1x, /DevTeam5/assets/mob-first-screen@2х-34168e92.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/first-screen-1х.jpg 1x, ./img/covers/covers-origin/first-screen-2х.jpg 2x"
+                src="/DevTeam5/assets/mob-first-screen-1х-cdd4238c.jpg"
+                alt="Upgrade Your Business with StarlightStudio"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-7-1x-79e05980.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-7@2x-1bed66f2.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg 1x, /DevTeam5/assets/mob-rectangle-7@2x-eedc6fac.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-7-1x.jpg 1x, ./img/covers/covers-origin/rectangle-7-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-7-1x-103dcb5e.jpg"
+                alt="Mimino"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-8-1x-ea35b4db.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-8@2x-25235e07.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg 1x, /DevTeam5/assets/mob-rectangle-8@2x-5762bb06.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-8-1x.jpg 1x, ./img/covers/covers-origin/rectangle-8-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-8-1x-48cc5b76.jpg"
+                alt="Reviving the traditional Ukrainan artistry"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-9-1x-5608ce4a.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-9@2x-0247ac85.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg 1x, /DevTeam5/assets/mob-rectangle-9@2x-533e0bdf.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-9-1x.jpg 1x, ./img/covers/covers-origin/rectangle-9-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-9-1x-8bc935e2.jpg"
+                alt="Organic vegetables "
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+          <li class="marquee-line">
+            <picture class="covers-img">
+              <source
+                srcset="/DevTeam5/assets/desc-tab-rectangle-10-1x-63ff8a72.jpg 1x, /DevTeam5/assets/desc-tab-rectangle-10@2x-eaa58a47.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg 1x, /DevTeam5/assets/mob-rectangle-10@2x-07182058.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="basic-img"
+                data-srcset="./img/covers/covers-origin/rectangle-10-1x.jpg 1x, ./img/covers/covers-origin/rectangle-10-2x.jpg 2x"
+                src="/DevTeam5/assets/mob-rectangle-10-1x-ad5b7cc1.jpg"
+                alt="Transforming your body shape with Power Pulse"
+                width="282"
+                height="162"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section reviews-section">
+  <div class="container">
+    <h2 class="reviews-title">REVIEWS</h2>
+    <div class="reviews-container swiper">
+      <ul class="reviews-list swiper-wrapper" id="reviews-list"></ul>
+    </div>
+     <div class="load-container hidden">
+      <div class="loader">
+        <ul class="dash-box">
+          <li class="dash one"></li>
+          <li class="dash two"></li>
+          <li class="dash three"></li>
+          <li class="dash four"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation-buttons-reviews hidden">
+      <div class="swiper-button-prev-reviews">
+        <svg class="arrow-reviews">
+          <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-arrow-swiper-1"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next-reviews">
+        <svg class="arrow-reviews">
+          <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-arrow-swiper-1"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="up-button is-hidden">
+  <a href="#header"
+    ><svg class="up-button-img">
+      <use xlink:href="/DevTeam5/assets/sprite-c58e01fb.svg#icon-arrow-swiper-1"></use></svg
+  ></a>
+</div>
+
+    </main>
+
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <div class="footer-top">
+      <img
+        class="footer-image"
+        srcset="/DevTeam5/assets/footer_img_1x-66d269ae.jpg 1x, /DevTeam5/assets/footer_img_2x-d8275575.jpg 2x"
+        src="/DevTeam5/assets/footer_img_1x-66d269ae.jpg"
+        alt="Photo Djefferson"
+      />
+      <h2 class="footer-title">Let’s <span class="title-accent">work</span></h2>
+      <h2 class="footer-title">together</h2>
+    </div>
+    <form class="footer-form">
+      <input
+        class="footer-form-input"
+        id="user-email"
+        type="email"
+        name="email"
+        placeholder="clients@gmail.com"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        autocomplete="off"
+      />
+      <input
+        class="footer-form-input"
+        id="user-comment"
+        type="text"
+        name="comments"
+        placeholder="comments"
+        autocomplete="off"
+      />
+      <button class="footer-form-btn" id="form-btn" type="submit">Send</button>
+    </form>
+    <address class="footer-bottom">
+      <ul class="contacts">
+        <li class="contacts-item contacts-mail">
+          <a class="contacts-link" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="contacts-item contacts-phone">
+          <a class="contacts-link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+  <!-- Modal-Window -->
+
+  <div class="footer-backdrop">
+    <div class="modal">
+      <div class="modal-box">
+        <button class="close-btn" type="button">
+          <svg class="icon-close" width="22" height="22">
+            <use href="/DevTeam5/assets/sprite-c58e01fb.svg#close-x"></use>
+          </svg>
+        </button>
+        <h3 class="modal-title"></h3>
+        <p class="modal-message"></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
