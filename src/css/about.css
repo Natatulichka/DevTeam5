@@ -17,10 +17,6 @@
   margin: 0 auto;
 }
 
-.section.about {
-  padding-top: 32px;
-}
-
 .slogan-avatar {
   display: flex;
   flex-direction: column;
@@ -259,10 +255,6 @@
   .about .container {
     max-width: 1376px;
     padding: 0;
-  }
-
-  .section.about {
-    padding-top: 48px;
   }
 
   .slogan-avatar {
