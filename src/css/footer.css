@@ -317,7 +317,7 @@
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
-    background: #1c1d20 url('/img/footer/footer-glass_mobil_1x.png') right
+    background: #1c1d20 url('/img/footer/footer-glass_mobil_2x.png') right
       center no-repeat;
   }
 }
