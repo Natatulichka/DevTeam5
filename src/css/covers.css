@@ -4,7 +4,7 @@
 .section-cover {
   position: relative;
   overflow: hidden;
-  padding: 0;
+  /* padding: 0; */
 }
 .circle {
   width: 350px;
@@ -35,6 +35,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
 .content {
   position: relative;
