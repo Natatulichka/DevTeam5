@@ -68,7 +68,7 @@
   background-color: #1c1d20;
   position: relative;
   margin-top: 0;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
 }
 
 .about .ac:not(:last-child) {
@@ -216,6 +216,10 @@
 
   .about-me-text:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  .about .ac {
+    padding-bottom: 32px;
   }
 
   .about .ac:not(:last-child) {
