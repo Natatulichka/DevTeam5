@@ -109,6 +109,8 @@
   height: 52px;
   fill: var(--bg-color);
   stroke: #fafafa;
+  transition: stroke var(--transition-duration)
+    var(--transition-timing-function);
 }
 .arrow-project:hover {
   stroke: var(--primary-hover-color);

@@ -1,15 +1,18 @@
 .section.reviews-section {
   overflow: hidden;
   padding-top: 64px;
+  padding-bottom: 64px;
 }
 @media only screen and (min-width: 768px) {
   .section.reviews-section {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .section.reviews-section {
     padding-top: 164px;
+    padding-bottom: 164px;
   }
 }
 .reviews-title {
