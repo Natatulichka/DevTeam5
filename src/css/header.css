@@ -16,9 +16,7 @@
   height: 19px;
   transition: scale var(--transition-duration) var(--transition-timing-function);
 }
-.logo-link:hover {
-  scale: 1.1;
-}
+
 .logo {
   display: flex;
   gap: 8px;
