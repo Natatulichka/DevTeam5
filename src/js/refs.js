@@ -10,7 +10,7 @@ export default {
   headerSection: document.querySelector('.header'),
   //
   selectThemeElem: document.querySelector('#theme-select'),
-  heroSectionElem: document.querySelector('#hero-section'),
+  heroElem: document.querySelector('.hero-container'),
   bodyElem: document.querySelector('body'),
   // Footer Elements:
   contactForm: document.querySelector('.footer-form'),

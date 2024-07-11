@@ -1,24 +1,31 @@
-.section.hero-section {
-  padding: 0;
+.hero-section {
+  padding-top: 0;
+}
+.hero-container {
   min-width: 320px;
   max-width: 1440px;
   height: 812px;
+  background-size: 310px 812px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 /* red theme */
-.section.hero-section.theme-red {
+.hero-container.theme-red {
   background: url(../img/hero/hero-mobile@1x.png) no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .section.hero-section.theme-red {
+  .hero-container.theme-red {
     background: url(../img/hero/hero-mobile@2x.png) no-repeat;
     background-size: 310px 812px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .section.hero-section.theme-red {
+  .hero-container.theme-red {
     background: url(../img/hero/hero-tablet@1x.png) no-repeat;
     height: 1024px;
   }
@@ -27,14 +34,14 @@
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-width: 768px) and (min-resolution: 192dpi),
   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .section.hero-section.theme-red {
+  .hero-container.theme-red {
     background: url(../img/hero/hero-tablet@2x.png) no-repeat;
     background-size: 581px 1024px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .section.hero-section.theme-red {
+  .hero-container.theme-red {
     background: url(../img/hero/hero-desktop@1x.png) no-repeat;
     height: 900px;
   }
@@ -43,26 +50,26 @@
 @media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-width: 1440px) and (min-resolution: 192dpi),
   only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .section.hero-section.theme-red {
+  .hero-container.theme-red {
     background: url(../img/hero/hero-desktop@2x.png) no-repeat;
     background-size: 728px 900px;
   }
 }
 /* blue-theme */
-.section.hero-section.theme-blue {
+.hero-container.theme-blue {
   background: url(../img/hero/blue-theme/mobile_hero_blue@1x.png) no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .section.hero-section.theme-blue {
+  .hero-container.theme-blue {
     background: url(../img/hero/blue-theme/mobile_hero_blue@2x.png) no-repeat;
     background-size: 310px 812px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .section.hero-section.theme-blue {
+  .hero-container.theme-blue {
     background: url(../img/hero/blue-theme/tablet_hero_blue@1x.png) no-repeat;
     height: 1024px;
   }
@@ -71,14 +78,14 @@
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-width: 768px) and (min-resolution: 192dpi),
   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .section.hero-section.theme-blue {
+  .hero-container.theme-blue {
     background: url(../img/hero/blue-theme/tablet_hero_blue@2x.png) no-repeat;
     background-size: 581px 1024px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .section.hero-section.theme-blue {
+  .hero-container.theme-blue {
     background: url(../img/hero/blue-theme/desktop_hero_blue@1x.png) no-repeat;
     height: 900px;
   }
@@ -87,29 +94,9 @@
 @media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-width: 1440px) and (min-resolution: 192dpi),
   only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .section.hero-section.theme-blue {
+  .hero-container.theme-blue {
     background: url(../img/hero/blue-theme/desktop_hero_blue@2x.png) no-repeat;
     background-size: 728px 900px;
-  }
-}
-/*  */
-.container.hero-container {
-  min-width: 320px;
-  max-width: 1440px;
-  background-size: 310px 812px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-@media only screen and (min-width: 768px) {
-  .container.hero-container {
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }
 
@@ -122,19 +109,19 @@
   letter-spacing: -0.03em;
   margin: 0;
   text-align: left;
-  padding-top: 281px;
+  margin-top: 281px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title {
     font-size: 90px;
-    padding-top: 300px;
+    margin-top: 300px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-title {
-    padding-left: 146px;
+    margin-left: 146px;
   }
 }
 
