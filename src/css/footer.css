@@ -75,6 +75,7 @@
 .footer-form-btn {
   width: 100px;
   height: 100px;
+  padding: 0;
   background-color: var(--primary-color);
   border-radius: 50%;
   border: none;
