@@ -89,7 +89,6 @@
     letter-spacing var(--transition-duration) var(--transition-timing-function);
 }
 .footer-form-btn:hover {
-  opacity: 0.6;
   background-color: var(--primary-hover-color);
   letter-spacing: 0.1em;
 }
