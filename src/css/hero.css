@@ -3,10 +3,11 @@
 }
 .hero-container {
   min-width: 320px;
-  max-width: 1440px;
+  max-width: 375px;
   height: 812px;
   background-size: 310px 812px;
   margin: 0 auto;
+  padding: 281px 16px 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,6 +26,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 768px;
+    padding: 300px 32px 32px;
+    height: 1024px;
+  }
   .hero-container.theme-red {
     background: url(../img/hero/hero-tablet@1x.png) no-repeat;
     height: 1024px;
@@ -41,6 +47,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .hero-container {
+    max-width: 1440px;
+    height: 900px;
+  }
   .hero-container.theme-red {
     background: url(../img/hero/hero-desktop@1x.png) no-repeat;
     height: 900px;
@@ -108,20 +118,18 @@
   line-height: 100%;
   letter-spacing: -0.03em;
   margin: 0;
-  text-align: left;
-  margin-top: 281px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title {
     font-size: 90px;
-    margin-top: 300px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-title {
-    margin-left: 146px;
+    width: 1084px;
+    margin: 0 auto;
   }
 }
 
@@ -140,7 +148,6 @@
 
 .hero-contacts-box {
   height: 37px;
-  margin-bottom: 32px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
