@@ -99,7 +99,6 @@
     opacity var(--transition-duration) var(--transition-timing-function);
 }
 .order-link:hover {
-  opacity: 0.6;
   background-color: var(--primary-hover-color);
 }
 
