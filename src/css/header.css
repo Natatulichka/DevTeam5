@@ -282,3 +282,22 @@
     max-width: 1440px;
   }
 }
+
+a .header-logo-jeff {
+  animation: animate 3s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(23rem) rotateY(0deg);
+  }
+
+  10% {
+    transform: perspective(23rem) rotateY(-45deg);
+  }
+
+  90%,
+  100% {
+    transform: perspective(23rem) rotateY(365deg);
+  }
+}
