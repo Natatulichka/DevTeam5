@@ -161,18 +161,16 @@
 
 .hero-contacts-list {
   list-style: none;
-  padding: 0;
-  margin: 0 0 32px 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 4px;
   width: 100%;
   height: 100%;
 }
 
 .hero-contact-item {
   width: 37px;
-  margin-right: 4px;
   box-sizing: border-box;
   height: 100%;
 }
@@ -180,7 +178,9 @@
 @media only screen and (min-width: 768px) {
   .hero-contact-item {
     width: 55px;
-    margin-right: 8px;
+  }
+  .hero-contacts-list {
+    gap: 8px;
   }
 }
 
