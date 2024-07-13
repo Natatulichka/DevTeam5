@@ -14,7 +14,6 @@
 
 .about .container {
   min-width: 0;
-  margin: 0 auto;
 }
 
 .slogan-avatar {
@@ -193,11 +192,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about .container {
-    max-width: 704px;
-    padding: 0;
-  }
-
   .about-slogan {
     font-size: 38px;
     line-height: 1.05263;
@@ -256,11 +250,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .about .container {
-    max-width: 1376px;
-    padding: 0;
-  }
-
   .slogan-avatar {
     flex-direction: row;
     column-gap: 16px;
