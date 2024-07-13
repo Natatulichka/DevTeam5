@@ -56,35 +56,35 @@ body {
 }
 .section {
   padding: 32px 0;
-  margin: 0 auto;
 }
 .container {
   padding: 0 16px;
+  margin: 0 auto;
 }
 html {
   scroll-behavior: smooth;
 }
 @media screen and (min-width: 375px) {
-  .section {
+  .container {
     max-width: 375px;
   }
 }
 @media screen and (min-width: 768px) {
   .section {
-    max-width: 768px;
     padding: 32px 0;
   }
   .container {
+    max-width: 768px;
     padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .section {
-    max-width: 1440px;
     padding: 48px 0;
   }
   .container {
+    max-width: 1440px;
     padding: 0 32px;
   }
 }
