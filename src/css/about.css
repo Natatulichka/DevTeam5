@@ -112,6 +112,8 @@
 .about .arrow-accordion-about {
   transform: rotate(180deg);
   stroke: #fafafa;
+  width: 18px;
+  height: 18px;
 }
 
 .about .ac.is-active .arrow-accordion-about {
@@ -206,6 +208,11 @@
 
   .about .accordion-container {
     margin-bottom: 64px;
+  }
+
+  .about .arrow-accordion-about {
+    width: 20px;
+    height: 20px;
   }
 
   .about-me-text:not(:last-child) {
