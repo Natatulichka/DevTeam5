@@ -129,9 +129,25 @@
       var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function),
     visibility var(--transition-duration) var(--transition-timing-function);
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/hero/glass-effect-mobile-menu.png),
+    var(--theme-gradient);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--bg-color);
 }
-
-.header-pop-up-menu.is-open {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .header-pop-up-menu {
+    background: url(../img/hero/glass-effect-mobile-menu@2x.png),
+      var(--theme-gradient);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.header-pop-up-menu.is-open-mobile {
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
@@ -200,42 +216,6 @@
 }
 .pop-up-order-link:hover {
   background-color: var(--primary-hover-color);
-}
-/* theme-red */
-.header-pop-up-menu.theme-red {
-  background: url(../img/header/Glass-effect-@1x.png), #1c1d20;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-/* retina red */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .header-pop-up-menu.theme-red {
-    background: url(../img/header/Glass-effect-@2x.png), #1c1d20;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-/* theme-blue */
-.header-pop-up-menu.theme-blue {
-  background: url(../img/header/blue-theme/mobile_menu_blue@1x.png), #1c1d20;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-/* Retina blue */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .header-pop-up-menu.theme-blue {
-    background: url(../img/header/blue-theme/mobile_menu_blue@2x.png), #1c1d20;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 /*=====Tablet version=====*/
