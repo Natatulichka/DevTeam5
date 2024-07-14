@@ -11,6 +11,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url(../img/hero/glass-effect-mobile@2x.png),
+    var(--theme-gradient);
+  background-repeat: no-repeat;
+  background-position-x: -268px, 0;
+  background-size: 578px 812px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
@@ -54,6 +59,7 @@
       var(--theme-gradient);
     background-repeat: no-repeat;
     background-size: 728px 900px, 1440px 900px;
+    background-position-x: 0px, 0px;
     height: 900px;
     max-width: 1440px;
   }
