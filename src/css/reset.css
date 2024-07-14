@@ -33,7 +33,7 @@ img {
 @font-face {
   font-family: 'Inter Tight';
   src: url('../fonts/InterTight-Medium.ttf') format('truetype');
-  font-weight: 500; /* Вага шрифту Medium */
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -41,7 +41,7 @@ img {
 @font-face {
   font-family: 'Inter Tight';
   src: url('../fonts/InterTight-SemiBold.ttf') format('truetype');
-  font-weight: 600; /* Вага шрифту SemiBold */
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
