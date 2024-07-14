@@ -89,14 +89,23 @@ refs.contactForm.addEventListener('submit', async function (e) {
 
 // <!-- Modal-Window -->
 function openModalWindow() {
-  refs.backdropEl.classList.add('is-open');
+  refs.backdropEl.classList.add('is-open-footer');
+  if (!document.body.classList.contains('scroll-off')) {
+    document.body.classList.add('scroll-off');
+  }
 }
 function closeModalWindow() {
-  refs.backdropEl.classList.remove('is-open');
+  refs.backdropEl.classList.remove('is-open-footer');
+  if (document.body.classList.contains('scroll-off')) {
+    document.body.classList.remove('scroll-off');
+  }
 }
 refs.closeModalBtnEl.addEventListener('click', closeModalWindow);
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && refs.backdropEl.classList.contains('is-open')) {
+  if (
+    e.key === 'Escape' &&
+    refs.backdropEl.classList.contains('is-open-footer')
+  ) {
     closeModalWindow();
   }
 });

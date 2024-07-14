@@ -159,7 +159,7 @@
       var(--transition-timing-function),
     visibility var(--transition-duration) var(--transition-timing-function);
 }
-.footer-backdrop.is-open {
+.footer-backdrop.is-open-footer {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
