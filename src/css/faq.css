@@ -61,6 +61,8 @@
 
 .icon-faq {
   stroke: #fafafa;
+  height: 20px;
+  width: 20px;
 }
 
 .is-active .icon-faq {
